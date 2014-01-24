@@ -1,0 +1,7 @@
+D:\IM\IM\IM\obj\x86\Debug\IM.Login.resources
+D:\IM\IM\IM\obj\x86\Debug\IM.Properties.Resources.resources
+D:\IM\IM\IM\obj\x86\Debug\IM.csproj.GenerateResource.Cache
+D:\IM\IM\IM\bin\Debug\IM.exe
+D:\IM\IM\IM\bin\Debug\IM.pdb
+D:\IM\IM\IM\obj\x86\Debug\IM.exe
+D:\IM\IM\IM\obj\x86\Debug\IM.pdb
