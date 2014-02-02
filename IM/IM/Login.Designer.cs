@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.login_title = new System.Windows.Forms.PictureBox();
             this.Uname = new System.Windows.Forms.Label();
             this.Pword = new System.Windows.Forms.Label();
@@ -150,7 +151,9 @@
             this.Controls.Add(this.Uname);
             this.Controls.Add(this.login_title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IM";
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).EndInit();
             this.ResumeLayout(false);

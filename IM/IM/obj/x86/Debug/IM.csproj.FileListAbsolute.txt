@@ -5,3 +5,5 @@ D:\IM\IM\IM\bin\Debug\IM.exe
 D:\IM\IM\IM\bin\Debug\IM.pdb
 D:\IM\IM\IM\obj\x86\Debug\IM.exe
 D:\IM\IM\IM\obj\x86\Debug\IM.pdb
+D:\IM\IM\IM\obj\x86\Debug\IM.csprojResolveAssemblyReference.cache
+D:\IM\IM\IM\obj\x86\Debug\IM.regist.resources
