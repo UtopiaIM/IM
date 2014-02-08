@@ -9,19 +9,16 @@ using System.Windows.Forms;
 
 namespace IM
 {
-    public partial class Login : Form
+    public partial class teachermanager : Form
     {
-        public Login()
+        public teachermanager()
         {
             InitializeComponent();
         }
 
-        private void regist_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            regist re = new regist();
-            re.Show();
-            regist_link.LinkVisited = true;
-        }
 
+        }
     }
 }

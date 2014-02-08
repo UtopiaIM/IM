@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.login_title = new System.Windows.Forms.PictureBox();
             this.Uname = new System.Windows.Forms.Label();
             this.Pword = new System.Windows.Forms.Label();
             this.Uname_textbox = new System.Windows.Forms.TextBox();
@@ -39,18 +38,9 @@
             this.autologin = new System.Windows.Forms.CheckBox();
             this.remainpw = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.login_title = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).BeginInit();
             this.SuspendLayout();
-            // 
-            // login_title
-            // 
-            this.login_title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.login_title.Image = global::IM.Properties.Resources.Login_标题;
-            this.login_title.Location = new System.Drawing.Point(0, 0);
-            this.login_title.Name = "login_title";
-            this.login_title.Size = new System.Drawing.Size(364, 74);
-            this.login_title.TabIndex = 0;
-            this.login_title.TabStop = false;
             // 
             // Uname
             // 
@@ -93,6 +83,7 @@
             this.regist_link.TabIndex = 5;
             this.regist_link.TabStop = true;
             this.regist_link.Text = "注册新用户";
+            this.regist_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.regist_link_LinkClicked);
             // 
             // findpassword_link
             // 
@@ -133,6 +124,16 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // login_title
+            // 
+            this.login_title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.login_title.Image = global::IM.Properties.Resources.Login_标题;
+            this.login_title.Location = new System.Drawing.Point(0, 0);
+            this.login_title.Name = "login_title";
+            this.login_title.Size = new System.Drawing.Size(364, 74);
+            this.login_title.TabIndex = 0;
+            this.login_title.TabStop = false;
             // 
             // Login
             // 
