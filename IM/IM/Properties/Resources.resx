@@ -121,16 +121,19 @@
   <data name="regist_企鹅" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\regist_企鹅1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="teachermanager_背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\teachermanager_背景.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="regist_背景 " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regist_背景 .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login_标题" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login_标题.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="regist_背景 " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\regist_背景 .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="teachermanager_头像" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teachermanager_头像.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teachermanager_背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teachermanager_背景.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_teacher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_teacher.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

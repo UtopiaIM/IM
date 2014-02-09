@@ -93,6 +93,16 @@ namespace IM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search_teacher {
+            get {
+                object obj = ResourceManager.GetObject("search_teacher", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap teachermanager_头像 {
             get {
                 object obj = ResourceManager.GetObject("teachermanager_头像", resourceCulture);

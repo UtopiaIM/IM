@@ -65,6 +65,12 @@
     <Compile Include="regist.Designer.cs">
       <DependentUpon>regist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Search_teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_teacher.Designer.cs">
+      <DependentUpon>Search_teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="teachermanager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="regist.resx">
       <DependentUpon>regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_teacher.resx">
+      <DependentUpon>Search_teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="teachermanager.resx">
       <DependentUpon>teachermanager.cs</DependentUpon>
@@ -121,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\teachermanager_头像.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_teacher.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
