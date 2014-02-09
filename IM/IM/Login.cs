@@ -23,5 +23,10 @@ namespace IM
             regist_link.LinkVisited = true;
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

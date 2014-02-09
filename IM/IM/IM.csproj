@@ -11,7 +11,8 @@
     <RootNamespace>IM</RootNamespace>
     <AssemblyName>IM</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="SkinForm">
       <HintPath>..\..\..\IMEducationPlatform\IMEducationPlatform\bin\Debug\SkinForm.dll</HintPath>
     </Reference>
@@ -88,6 +90,7 @@
     <EmbeddedResource Include="teachermanager.resx">
       <DependentUpon>teachermanager.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\teachermanager_背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teachermanager_头像.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

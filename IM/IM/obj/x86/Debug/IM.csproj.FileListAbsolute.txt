@@ -9,3 +9,4 @@ D:\IM\IM\IM\obj\x86\Debug\IM.csprojResolveAssemblyReference.cache
 D:\IM\IM\IM\obj\x86\Debug\IM.regist.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.teachermanager.resources
 D:\IM\IM\IM\bin\Debug\SkinForm.dll
+D:\IM\IM\IM\bin\Debug\IM.exe.config

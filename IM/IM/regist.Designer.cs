@@ -47,6 +47,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             this.username.AutoSize = true;
             this.username.BackColor = System.Drawing.Color.Transparent;
-            this.username.Location = new System.Drawing.Point(283, 13);
+            this.username.Location = new System.Drawing.Point(284, 13);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(82, 15);
             this.username.TabIndex = 0;
@@ -98,7 +99,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(287, 256);
+            this.label4.Location = new System.Drawing.Point(283, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 15);
             this.label4.TabIndex = 7;
@@ -108,7 +109,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(289, 309);
+            this.label1.Location = new System.Drawing.Point(284, 305);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 8;
@@ -118,7 +119,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(284, 353);
+            this.label5.Location = new System.Drawing.Point(284, 349);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 15);
             this.label5.TabIndex = 9;
@@ -128,7 +129,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(286, 207);
+            this.label6.Location = new System.Drawing.Point(284, 207);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 10;
@@ -153,7 +154,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(289, 274);
+            this.textBox5.Location = new System.Drawing.Point(286, 271);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(104, 25);
             this.textBox5.TabIndex = 15;
@@ -164,7 +165,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "学生",
             "老师"});
-            this.comboBox1.Location = new System.Drawing.Point(289, 327);
+            this.comboBox1.Location = new System.Drawing.Point(286, 323);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(106, 23);
             this.comboBox1.TabIndex = 16;
@@ -175,7 +176,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.comboBox2.Location = new System.Drawing.Point(290, 371);
+            this.comboBox2.Location = new System.Drawing.Point(286, 371);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(106, 23);
             this.comboBox2.TabIndex = 17;
@@ -202,6 +203,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -212,12 +214,18 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // skinEngine1
+            // 
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = "D:\\IM\\IM\\IM\\bin\\Debug\\MP10.ssk";
+            this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
+            // 
             // regist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IM.Properties.Resources.regist_背景_;
-            this.ClientSize = new System.Drawing.Size(584, 420);
+            this.ClientSize = new System.Drawing.Size(574, 420);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
@@ -266,5 +274,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }
 }

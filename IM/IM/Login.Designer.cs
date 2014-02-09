@@ -38,6 +38,7 @@
             this.autologin = new System.Windows.Forms.CheckBox();
             this.remainpw = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.login_title = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).BeginInit();
             this.SuspendLayout();
@@ -125,13 +126,19 @@
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // skinEngine1
+            // 
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = "D:\\IM\\IM\\IM\\bin\\Debug\\MP10.ssk";
+            this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
+            // 
             // login_title
             // 
             this.login_title.Dock = System.Windows.Forms.DockStyle.Top;
             this.login_title.Image = global::IM.Properties.Resources.Login_标题;
             this.login_title.Location = new System.Drawing.Point(0, 0);
             this.login_title.Name = "login_title";
-            this.login_title.Size = new System.Drawing.Size(364, 74);
+            this.login_title.Size = new System.Drawing.Size(360, 85);
             this.login_title.TabIndex = 0;
             this.login_title.TabStop = false;
             // 
@@ -140,7 +147,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(246)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(364, 256);
+            this.ClientSize = new System.Drawing.Size(360, 263);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.remainpw);
             this.Controls.Add(this.autologin);
@@ -151,11 +158,12 @@
             this.Controls.Add(this.Pword);
             this.Controls.Add(this.Uname);
             this.Controls.Add(this.login_title);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IM";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,6 +182,7 @@
         private System.Windows.Forms.CheckBox autologin;
         private System.Windows.Forms.CheckBox remainpw;
         private System.Windows.Forms.Button button1;
+        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }
 }
 
