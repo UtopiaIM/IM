@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Createclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Createclass.Designer.cs">
+      <DependentUpon>Createclass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,12 @@
     <Compile Include="regist.Designer.cs">
       <DependentUpon>regist.cs</DependentUpon>
     </Compile>
+    <Compile Include="search_student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_student.Designer.cs">
+      <DependentUpon>search_student.cs</DependentUpon>
+    </Compile>
     <Compile Include="Search_teacher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,9 @@
     <Compile Include="teachermanager.Designer.cs">
       <DependentUpon>teachermanager.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Createclass.resx">
+      <DependentUpon>Createclass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="regist.resx">
       <DependentUpon>regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_student.resx">
+      <DependentUpon>search_student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search_teacher.resx">
       <DependentUpon>Search_teacher.cs</DependentUpon>
@@ -133,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search_teacher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_createclass.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
