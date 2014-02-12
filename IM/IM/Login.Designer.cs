@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Uname = new System.Windows.Forms.Label();
             this.Pword = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.login_title = new System.Windows.Forms.PictureBox();
+            this.tuopan = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,6 +145,17 @@
             this.login_title.TabIndex = 0;
             this.login_title.TabStop = false;
             // 
+            // tuopan
+            // 
+            this.tuopan.Icon = ((System.Drawing.Icon)(resources.GetObject("tuopan.Icon")));
+            this.tuopan.Text = "IM";
+            this.tuopan.Visible = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -183,6 +197,8 @@
         private System.Windows.Forms.CheckBox remainpw;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        public System.Windows.Forms.NotifyIcon tuopan;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

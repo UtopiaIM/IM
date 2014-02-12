@@ -44,6 +44,8 @@
             this.skinRadioButton7 = new CCWin.SkinControl.SkinRadioButton();
             this.skinButtom1 = new CCWin.SkinControl.SkinButtom();
             this.skinButtom2 = new CCWin.SkinControl.SkinButtom();
+            this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
+            this.skinRichTextBox1 = new CCWin.SkinControl.SkinRichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 137);
+            this.textBox1.Location = new System.Drawing.Point(155, 106);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(335, 25);
             this.textBox1.TabIndex = 1;
@@ -67,7 +69,7 @@
             this.skinRadioButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton1.DownBack = null;
             this.skinRadioButton1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton1.Location = new System.Drawing.Point(151, 185);
+            this.skinRadioButton1.Location = new System.Drawing.Point(156, 154);
             this.skinRadioButton1.MouseBack = null;
             this.skinRadioButton1.Name = "skinRadioButton1";
             this.skinRadioButton1.NormlBack = null;
@@ -86,7 +88,7 @@
             this.skinLabel1.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel1.BorderColor = System.Drawing.Color.White;
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel1.Location = new System.Drawing.Point(61, 137);
+            this.skinLabel1.Location = new System.Drawing.Point(66, 106);
             this.skinLabel1.Name = "skinLabel1";
             this.skinLabel1.Size = new System.Drawing.Size(84, 20);
             this.skinLabel1.TabIndex = 6;
@@ -98,7 +100,7 @@
             this.skinLabel2.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel2.BorderColor = System.Drawing.Color.White;
             this.skinLabel2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel2.Location = new System.Drawing.Point(60, 185);
+            this.skinLabel2.Location = new System.Drawing.Point(65, 154);
             this.skinLabel2.Name = "skinLabel2";
             this.skinLabel2.Size = new System.Drawing.Size(84, 20);
             this.skinLabel2.TabIndex = 7;
@@ -111,7 +113,7 @@
             this.skinRadioButton2.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton2.DownBack = null;
             this.skinRadioButton2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton2.Location = new System.Drawing.Point(232, 185);
+            this.skinRadioButton2.Location = new System.Drawing.Point(237, 154);
             this.skinRadioButton2.MouseBack = null;
             this.skinRadioButton2.Name = "skinRadioButton2";
             this.skinRadioButton2.NormlBack = null;
@@ -131,7 +133,7 @@
             this.skinRadioButton3.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton3.DownBack = null;
             this.skinRadioButton3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton3.Location = new System.Drawing.Point(309, 185);
+            this.skinRadioButton3.Location = new System.Drawing.Point(314, 154);
             this.skinRadioButton3.MouseBack = null;
             this.skinRadioButton3.Name = "skinRadioButton3";
             this.skinRadioButton3.NormlBack = null;
@@ -151,7 +153,7 @@
             this.skinRadioButton4.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton4.DownBack = null;
             this.skinRadioButton4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton4.Location = new System.Drawing.Point(407, 183);
+            this.skinRadioButton4.Location = new System.Drawing.Point(412, 152);
             this.skinRadioButton4.MouseBack = null;
             this.skinRadioButton4.Name = "skinRadioButton4";
             this.skinRadioButton4.NormlBack = null;
@@ -179,7 +181,7 @@
             this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel3.BorderColor = System.Drawing.Color.White;
             this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel3.Location = new System.Drawing.Point(59, 237);
+            this.skinLabel3.Location = new System.Drawing.Point(64, 206);
             this.skinLabel3.Name = "skinLabel3";
             this.skinLabel3.Size = new System.Drawing.Size(84, 20);
             this.skinLabel3.TabIndex = 12;
@@ -192,7 +194,7 @@
             this.skinRadioButton5.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton5.DownBack = null;
             this.skinRadioButton5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton5.Location = new System.Drawing.Point(151, 235);
+            this.skinRadioButton5.Location = new System.Drawing.Point(156, 204);
             this.skinRadioButton5.MouseBack = null;
             this.skinRadioButton5.Name = "skinRadioButton5";
             this.skinRadioButton5.NormlBack = null;
@@ -212,7 +214,7 @@
             this.skinRadioButton6.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton6.DownBack = null;
             this.skinRadioButton6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton6.Location = new System.Drawing.Point(243, 233);
+            this.skinRadioButton6.Location = new System.Drawing.Point(248, 202);
             this.skinRadioButton6.MouseBack = null;
             this.skinRadioButton6.Name = "skinRadioButton6";
             this.skinRadioButton6.NormlBack = null;
@@ -232,7 +234,7 @@
             this.skinRadioButton7.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinRadioButton7.DownBack = null;
             this.skinRadioButton7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinRadioButton7.Location = new System.Drawing.Point(374, 233);
+            this.skinRadioButton7.Location = new System.Drawing.Point(379, 202);
             this.skinRadioButton7.MouseBack = null;
             this.skinRadioButton7.Name = "skinRadioButton7";
             this.skinRadioButton7.NormlBack = null;
@@ -250,7 +252,7 @@
             this.skinButtom1.BackColor = System.Drawing.Color.Transparent;
             this.skinButtom1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButtom1.DownBack = null;
-            this.skinButtom1.Location = new System.Drawing.Point(141, 309);
+            this.skinButtom1.Location = new System.Drawing.Point(91, 352);
             this.skinButtom1.MouseBack = null;
             this.skinButtom1.Name = "skinButtom1";
             this.skinButtom1.NormlBack = null;
@@ -264,7 +266,7 @@
             this.skinButtom2.BackColor = System.Drawing.Color.Transparent;
             this.skinButtom2.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButtom2.DownBack = null;
-            this.skinButtom2.Location = new System.Drawing.Point(291, 309);
+            this.skinButtom2.Location = new System.Drawing.Point(412, 352);
             this.skinButtom2.MouseBack = null;
             this.skinButtom2.Name = "skinButtom2";
             this.skinButtom2.NormlBack = null;
@@ -273,12 +275,34 @@
             this.skinButtom2.Text = "返回";
             this.skinButtom2.UseVisualStyleBackColor = false;
             // 
+            // skinLabel4
+            // 
+            this.skinLabel4.AutoSize = true;
+            this.skinLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel4.BorderColor = System.Drawing.Color.White;
+            this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel4.Location = new System.Drawing.Point(63, 251);
+            this.skinLabel4.Name = "skinLabel4";
+            this.skinLabel4.Size = new System.Drawing.Size(84, 20);
+            this.skinLabel4.TabIndex = 18;
+            this.skinLabel4.Text = "教室简介：";
+            // 
+            // skinRichTextBox1
+            // 
+            this.skinRichTextBox1.Location = new System.Drawing.Point(155, 251);
+            this.skinRichTextBox1.Name = "skinRichTextBox1";
+            this.skinRichTextBox1.Size = new System.Drawing.Size(335, 79);
+            this.skinRichTextBox1.TabIndex = 19;
+            this.skinRichTextBox1.Text = "";
+            // 
             // Createclass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IM.Properties.Resources.teachermanager_背景;
             this.ClientSize = new System.Drawing.Size(582, 405);
+            this.Controls.Add(this.skinRichTextBox1);
+            this.Controls.Add(this.skinLabel4);
             this.Controls.Add(this.skinButtom2);
             this.Controls.Add(this.skinButtom1);
             this.Controls.Add(this.skinRadioButton7);
@@ -319,5 +343,7 @@
         private CCWin.SkinControl.SkinRadioButton skinRadioButton7;
         private CCWin.SkinControl.SkinButtom skinButtom1;
         private CCWin.SkinControl.SkinButtom skinButtom2;
+        private CCWin.SkinControl.SkinLabel skinLabel4;
+        private CCWin.SkinControl.SkinRichTextBox skinRichTextBox1;
     }
 }
