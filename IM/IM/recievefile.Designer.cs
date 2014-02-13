@@ -37,8 +37,11 @@
             this.skinLabel6 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel7 = new CCWin.SkinControl.SkinLabel();
             this.waterTextBox1 = new CCWin.SkinControl.WaterTextBox();
-            this.skinButtom1 = new CCWin.SkinControl.SkinButtom();
-            this.skinButtom2 = new CCWin.SkinControl.SkinButtom();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.skinLabel3 = new CCWin.SkinControl.SkinLabel();
+            this.skinProgressBar1 = new CCWin.SkinControl.SkinProgressBar();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // skinEngine1
@@ -129,33 +132,46 @@
             this.waterTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.waterTextBox1.WaterText = "";
             // 
-            // skinButtom1
+            // button1
             // 
-            this.skinButtom1.BackColor = System.Drawing.Color.Transparent;
-            this.skinButtom1.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButtom1.DownBack = null;
-            this.skinButtom1.Location = new System.Drawing.Point(147, 167);
-            this.skinButtom1.MouseBack = null;
-            this.skinButtom1.Name = "skinButtom1";
-            this.skinButtom1.NormlBack = null;
-            this.skinButtom1.Size = new System.Drawing.Size(75, 23);
-            this.skinButtom1.TabIndex = 8;
-            this.skinButtom1.Text = "另存为";
-            this.skinButtom1.UseVisualStyleBackColor = false;
+            this.button1.Location = new System.Drawing.Point(136, 197);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 25);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "另存为";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // skinButtom2
+            // button2
             // 
-            this.skinButtom2.BackColor = System.Drawing.Color.Transparent;
-            this.skinButtom2.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButtom2.DownBack = null;
-            this.skinButtom2.Location = new System.Drawing.Point(268, 167);
-            this.skinButtom2.MouseBack = null;
-            this.skinButtom2.Name = "skinButtom2";
-            this.skinButtom2.NormlBack = null;
-            this.skinButtom2.Size = new System.Drawing.Size(75, 23);
-            this.skinButtom2.TabIndex = 9;
-            this.skinButtom2.Text = "接受";
-            this.skinButtom2.UseVisualStyleBackColor = false;
+            this.button2.Location = new System.Drawing.Point(327, 197);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "接收";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // skinLabel3
+            // 
+            this.skinLabel3.AutoSize = true;
+            this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel3.BorderColor = System.Drawing.Color.White;
+            this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel3.Location = new System.Drawing.Point(112, 147);
+            this.skinLabel3.Name = "skinLabel3";
+            this.skinLabel3.Size = new System.Drawing.Size(84, 20);
+            this.skinLabel3.TabIndex = 10;
+            this.skinLabel3.Text = "接收进度：";
+            // 
+            // skinProgressBar1
+            // 
+            this.skinProgressBar1.Back = null;
+            this.skinProgressBar1.BarBack = null;
+            this.skinProgressBar1.ForeColor = System.Drawing.Color.Red;
+            this.skinProgressBar1.Location = new System.Drawing.Point(202, 148);
+            this.skinProgressBar1.Name = "skinProgressBar1";
+            this.skinProgressBar1.Size = new System.Drawing.Size(212, 23);
+            this.skinProgressBar1.TabIndex = 11;
             // 
             // recievefile
             // 
@@ -163,8 +179,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IM.Properties.Resources.teachermanager_背景;
             this.ClientSize = new System.Drawing.Size(519, 234);
-            this.Controls.Add(this.skinButtom2);
-            this.Controls.Add(this.skinButtom1);
+            this.Controls.Add(this.skinProgressBar1);
+            this.Controls.Add(this.skinLabel3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.waterTextBox1);
             this.Controls.Add(this.skinLabel7);
             this.Controls.Add(this.skinLabel6);
@@ -190,7 +208,10 @@
         private CCWin.SkinControl.SkinLabel skinLabel6;
         private CCWin.SkinControl.SkinLabel skinLabel7;
         private CCWin.SkinControl.WaterTextBox waterTextBox1;
-        private CCWin.SkinControl.SkinButtom skinButtom1;
-        private CCWin.SkinControl.SkinButtom skinButtom2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private CCWin.SkinControl.SkinLabel skinLabel3;
+        private CCWin.SkinControl.SkinProgressBar skinProgressBar1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }

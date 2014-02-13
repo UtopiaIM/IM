@@ -28,5 +28,16 @@ namespace IM
 
         }
 
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sendfile rf = new sendfile();
+            rf.Show();
+        }
+
     }
 }

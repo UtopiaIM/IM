@@ -42,8 +42,11 @@
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.login_title = new System.Windows.Forms.PictureBox();
             this.tuopan = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.loginmenu = new CCWin.SkinControl.SkinContextMenuStrip();
+            this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).BeginInit();
+            this.loginmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // Uname
@@ -128,6 +131,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // skinEngine1
             // 
@@ -147,14 +151,51 @@
             // 
             // tuopan
             // 
+            this.tuopan.ContextMenuStrip = this.loginmenu;
             this.tuopan.Icon = ((System.Drawing.Icon)(resources.GetObject("tuopan.Icon")));
             this.tuopan.Text = "IM";
             this.tuopan.Visible = true;
             // 
-            // contextMenuStrip1
+            // loginmenu
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.loginmenu.Arrow = System.Drawing.Color.Black;
+            this.loginmenu.Back = System.Drawing.Color.White;
+            this.loginmenu.BackRadius = 4;
+            this.loginmenu.Base = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(200)))), ((int)(((byte)(254)))));
+            this.loginmenu.DropDownImageSeparator = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.loginmenu.Fore = System.Drawing.Color.Black;
+            this.loginmenu.HoverFore = System.Drawing.Color.White;
+            this.loginmenu.ItemAnamorphosis = true;
+            this.loginmenu.ItemBorder = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.loginmenu.ItemBorderShow = true;
+            this.loginmenu.ItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.loginmenu.ItemPressed = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.loginmenu.ItemRadius = 4;
+            this.loginmenu.ItemRadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            this.loginmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.打开ToolStripMenuItem,
+            this.退出ToolStripMenuItem});
+            this.loginmenu.ItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.loginmenu.Name = "skinContextMenuStrip1";
+            this.loginmenu.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            this.loginmenu.Size = new System.Drawing.Size(154, 52);
+            this.loginmenu.TitleAnamorphosis = true;
+            this.loginmenu.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
+            this.loginmenu.TitleRadius = 4;
+            this.loginmenu.TitleRadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            // 
+            // 打开ToolStripMenuItem
+            // 
+            this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.打开ToolStripMenuItem.Text = "打开主面板";
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // Login
             // 
@@ -179,6 +220,7 @@
             this.Text = "IM";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.login_title)).EndInit();
+            this.loginmenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +240,9 @@
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
         public System.Windows.Forms.NotifyIcon tuopan;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private CCWin.SkinControl.SkinContextMenuStrip loginmenu;
+        private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
     }
 }
 

@@ -42,10 +42,10 @@
             this.skinRadioButton5 = new CCWin.SkinControl.SkinRadioButton();
             this.skinRadioButton6 = new CCWin.SkinControl.SkinRadioButton();
             this.skinRadioButton7 = new CCWin.SkinControl.SkinRadioButton();
-            this.skinButtom1 = new CCWin.SkinControl.SkinButtom();
-            this.skinButtom2 = new CCWin.SkinControl.SkinButtom();
             this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
             this.skinRichTextBox1 = new CCWin.SkinControl.SkinRichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -247,34 +247,6 @@
             this.skinRadioButton7.Text = "只能邀请";
             this.skinRadioButton7.UseVisualStyleBackColor = false;
             // 
-            // skinButtom1
-            // 
-            this.skinButtom1.BackColor = System.Drawing.Color.Transparent;
-            this.skinButtom1.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButtom1.DownBack = null;
-            this.skinButtom1.Location = new System.Drawing.Point(91, 352);
-            this.skinButtom1.MouseBack = null;
-            this.skinButtom1.Name = "skinButtom1";
-            this.skinButtom1.NormlBack = null;
-            this.skinButtom1.Size = new System.Drawing.Size(75, 23);
-            this.skinButtom1.TabIndex = 16;
-            this.skinButtom1.Text = "创建教室";
-            this.skinButtom1.UseVisualStyleBackColor = false;
-            // 
-            // skinButtom2
-            // 
-            this.skinButtom2.BackColor = System.Drawing.Color.Transparent;
-            this.skinButtom2.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButtom2.DownBack = null;
-            this.skinButtom2.Location = new System.Drawing.Point(412, 352);
-            this.skinButtom2.MouseBack = null;
-            this.skinButtom2.Name = "skinButtom2";
-            this.skinButtom2.NormlBack = null;
-            this.skinButtom2.Size = new System.Drawing.Size(75, 23);
-            this.skinButtom2.TabIndex = 17;
-            this.skinButtom2.Text = "返回";
-            this.skinButtom2.UseVisualStyleBackColor = false;
-            // 
             // skinLabel4
             // 
             this.skinLabel4.AutoSize = true;
@@ -295,16 +267,34 @@
             this.skinRichTextBox1.TabIndex = 19;
             this.skinRichTextBox1.Text = "";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(111, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "创建教室";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(360, 352);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "返回";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Createclass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IM.Properties.Resources.teachermanager_背景;
             this.ClientSize = new System.Drawing.Size(582, 405);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.skinRichTextBox1);
             this.Controls.Add(this.skinLabel4);
-            this.Controls.Add(this.skinButtom2);
-            this.Controls.Add(this.skinButtom1);
             this.Controls.Add(this.skinRadioButton7);
             this.Controls.Add(this.skinRadioButton6);
             this.Controls.Add(this.skinRadioButton5);
@@ -341,9 +331,9 @@
         private CCWin.SkinControl.SkinRadioButton skinRadioButton5;
         private CCWin.SkinControl.SkinRadioButton skinRadioButton6;
         private CCWin.SkinControl.SkinRadioButton skinRadioButton7;
-        private CCWin.SkinControl.SkinButtom skinButtom1;
-        private CCWin.SkinControl.SkinButtom skinButtom2;
         private CCWin.SkinControl.SkinLabel skinLabel4;
         private CCWin.SkinControl.SkinRichTextBox skinRichTextBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

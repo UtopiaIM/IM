@@ -15,5 +15,14 @@ namespace IM
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog rf = new FolderBrowserDialog();
+            if (rf.ShowDialog()==DialogResult.OK)
+            {
+                waterTextBox1.Text = rf.SelectedPath; 
+            }
+        }
     }
 }

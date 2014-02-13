@@ -32,12 +32,14 @@
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.waterTextBox1 = new CCWin.SkinControl.WaterTextBox();
-            this.skinButtom1 = new CCWin.SkinControl.SkinButtom();
-            this.skinButtom2 = new CCWin.SkinControl.SkinButtom();
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.skinProgressBar1 = new CCWin.SkinControl.SkinProgressBar();
             this.skinLabel3 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.skinLabel5 = new CCWin.SkinControl.SkinLabel();
             this.SuspendLayout();
             // 
             // skinEngine1
@@ -66,34 +68,6 @@
             this.waterTextBox1.TabIndex = 1;
             this.waterTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.waterTextBox1.WaterText = "";
-            // 
-            // skinButtom1
-            // 
-            this.skinButtom1.BackColor = System.Drawing.Color.Transparent;
-            this.skinButtom1.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButtom1.DownBack = null;
-            this.skinButtom1.Location = new System.Drawing.Point(421, 45);
-            this.skinButtom1.MouseBack = null;
-            this.skinButtom1.Name = "skinButtom1";
-            this.skinButtom1.NormlBack = null;
-            this.skinButtom1.Size = new System.Drawing.Size(75, 23);
-            this.skinButtom1.TabIndex = 2;
-            this.skinButtom1.Text = "选择文件";
-            this.skinButtom1.UseVisualStyleBackColor = false;
-            // 
-            // skinButtom2
-            // 
-            this.skinButtom2.BackColor = System.Drawing.Color.Transparent;
-            this.skinButtom2.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.skinButtom2.DownBack = null;
-            this.skinButtom2.Location = new System.Drawing.Point(224, 165);
-            this.skinButtom2.MouseBack = null;
-            this.skinButtom2.Name = "skinButtom2";
-            this.skinButtom2.NormlBack = null;
-            this.skinButtom2.Size = new System.Drawing.Size(75, 23);
-            this.skinButtom2.TabIndex = 3;
-            this.skinButtom2.Text = "发送文件";
-            this.skinButtom2.UseVisualStyleBackColor = false;
             // 
             // skinLabel2
             // 
@@ -124,7 +98,7 @@
             this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel3.BorderColor = System.Drawing.Color.White;
             this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel3.Location = new System.Drawing.Point(61, 85);
+            this.skinLabel3.Location = new System.Drawing.Point(62, 85);
             this.skinLabel3.Name = "skinLabel3";
             this.skinLabel3.Size = new System.Drawing.Size(84, 20);
             this.skinLabel3.TabIndex = 6;
@@ -136,11 +110,45 @@
             this.skinLabel4.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel4.BorderColor = System.Drawing.Color.White;
             this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel4.Location = new System.Drawing.Point(151, 85);
+            this.skinLabel4.Location = new System.Drawing.Point(152, 85);
             this.skinLabel4.Name = "skinLabel4";
-            this.skinLabel4.Size = new System.Drawing.Size(51, 20);
+            this.skinLabel4.Size = new System.Drawing.Size(0, 20);
             this.skinLabel4.TabIndex = 7;
-            this.skinLabel4.Text = "20MB";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(420, 43);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "选择文件";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(224, 166);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 26);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "发送文件";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // skinLabel5
+            // 
+            this.skinLabel5.AutoSize = true;
+            this.skinLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel5.BorderColor = System.Drawing.Color.White;
+            this.skinLabel5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel5.Location = new System.Drawing.Point(152, 85);
+            this.skinLabel5.Name = "skinLabel5";
+            this.skinLabel5.Size = new System.Drawing.Size(37, 20);
+            this.skinLabel5.TabIndex = 10;
+            this.skinLabel5.Text = "       ";
             // 
             // sendfile
             // 
@@ -148,12 +156,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IM.Properties.Resources.teachermanager_背景;
             this.ClientSize = new System.Drawing.Size(519, 234);
+            this.Controls.Add(this.skinLabel5);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.skinLabel4);
             this.Controls.Add(this.skinLabel3);
             this.Controls.Add(this.skinProgressBar1);
             this.Controls.Add(this.skinLabel2);
-            this.Controls.Add(this.skinButtom2);
-            this.Controls.Add(this.skinButtom1);
             this.Controls.Add(this.waterTextBox1);
             this.Controls.Add(this.skinLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -169,11 +178,13 @@
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
         private CCWin.SkinControl.SkinLabel skinLabel1;
         private CCWin.SkinControl.WaterTextBox waterTextBox1;
-        private CCWin.SkinControl.SkinButtom skinButtom1;
-        private CCWin.SkinControl.SkinButtom skinButtom2;
         private CCWin.SkinControl.SkinLabel skinLabel2;
         private CCWin.SkinControl.SkinProgressBar skinProgressBar1;
         private CCWin.SkinControl.SkinLabel skinLabel3;
         private CCWin.SkinControl.SkinLabel skinLabel4;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private CCWin.SkinControl.SkinLabel skinLabel5;
     }
 }
