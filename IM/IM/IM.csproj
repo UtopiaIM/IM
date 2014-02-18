@@ -57,6 +57,18 @@
     <Compile Include="Createclass.Designer.cs">
       <DependentUpon>Createclass.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChat.Designer.cs">
+      <DependentUpon>frmChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassroom.Designer.cs">
+      <DependentUpon>frmClassroom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </Compile>
     <EmbeddedResource Include="Createclass.resx">
       <DependentUpon>Createclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChat.resx">
+      <DependentUpon>frmChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassroom.resx">
+      <DependentUpon>frmClassroom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -172,6 +190,87 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\title_createclass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_quickbar_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_quickbar_font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_quickbar_math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_quickbar_sendpic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCommunicate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSpeech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTeach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_add.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_chatHistory.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_delete.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_save.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_speech.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_video.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_writeBoard.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

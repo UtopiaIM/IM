@@ -15,3 +15,6 @@ D:\IM\IM\IM\obj\x86\Debug\IM.Createclass.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.search_student.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.sendfile.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.recievefile.resources
+E:\MyWorkSpace\IM\trunk\IM\IM\bin\Debug\IM.exe.config
+E:\MyWorkSpace\IM\trunk\IM\IM\obj\x86\Debug\IM.exe
+E:\MyWorkSpace\IM\trunk\IM\IM\obj\x86\Debug\IM.pdb
