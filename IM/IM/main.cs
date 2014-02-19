@@ -15,5 +15,22 @@ namespace IM
         {
             InitializeComponent();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            search_student sstu = new search_student();
+            sstu.Show();
+        }
+
+        private void 发送即时消息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChat frmc = new frmChat();
+            frmc.Show();
+        }
+
+        private void main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

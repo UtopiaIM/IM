@@ -39,6 +39,19 @@ namespace IM
             mai.Show();
             this.Hide();
         }
+        main ma;
+
+        private void 打开ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ma != null)
+            {
+                ma.Show();
+            }
+            else
+            {
+                this.Show();
+            }
+        }
 
     }
 }

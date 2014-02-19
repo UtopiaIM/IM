@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SideBar, Version=1.0.2813.28543, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="SkinForm">
       <HintPath>..\..\..\IMEducationPlatform\IMEducationPlatform\bin\Debug\SkinForm.dll</HintPath>
     </Reference>

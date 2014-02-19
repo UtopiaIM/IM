@@ -15,5 +15,17 @@ namespace IM
         {
             InitializeComponent();
         }
+
+        private void toolStripButtonWenJian_Click(object sender, EventArgs e)
+        {
+            sendfile sendf = new sendfile();
+            sendf.Show();
+        }
+
+        private void toolStripButtonLiaoTianJiLu_Click(object sender, EventArgs e)
+        {
+            frmClassroom frmc = new frmClassroom();
+            frmc.Show();
+        }
     }
 }

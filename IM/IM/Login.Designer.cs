@@ -178,7 +178,7 @@
             this.loginmenu.ItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
             this.loginmenu.Name = "skinContextMenuStrip1";
             this.loginmenu.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.loginmenu.Size = new System.Drawing.Size(154, 52);
+            this.loginmenu.Size = new System.Drawing.Size(154, 74);
             this.loginmenu.TitleAnamorphosis = true;
             this.loginmenu.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
             this.loginmenu.TitleRadius = 4;
@@ -189,6 +189,7 @@
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
             this.打开ToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.打开ToolStripMenuItem.Text = "打开主面板";
+            this.打开ToolStripMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClassroom));
-            this.listView1 = new System.Windows.Forms.ListView();
             this.toolStripButtonQianDao = new System.Windows.Forms.ToolStripButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -44,8 +43,6 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStripButton15 = new System.Windows.Forms.ToolStripButton();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.toolStripButtonDaYi = new System.Windows.Forms.ToolStripButton();
             this.panel11 = new System.Windows.Forms.Panel();
             this.toolStrip7 = new System.Windows.Forms.ToolStrip();
@@ -54,7 +51,6 @@
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBaiban = new System.Windows.Forms.ToolStripButton();
@@ -74,6 +70,7 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.sideBar1 = new Aptech.UI.SideBar();
             this.btnHelp = new System.Windows.Forms.Button();
             this.richTextBoxClassInfo = new System.Windows.Forms.RichTextBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -166,15 +163,6 @@
             this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(3, 88);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(297, 562);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // toolStripButtonQianDao
             // 
             this.toolStripButtonQianDao.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -193,7 +181,7 @@
             this.panel4.Controls.Add(this.richTextBox2);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(311, 596);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1067, 282);
             this.panel4.TabIndex = 48;
@@ -205,7 +193,7 @@
             this.panel5.Controls.Add(this.btnSend);
             this.panel5.Controls.Add(this.richTextBox3);
             this.panel5.Location = new System.Drawing.Point(507, 29);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(547, 238);
             this.panel5.TabIndex = 3;
@@ -214,7 +202,7 @@
             // 
             this.panel6.Controls.Add(this.toolStrip3);
             this.panel6.Location = new System.Drawing.Point(13, 209);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(409, 29);
             this.panel6.TabIndex = 4;
@@ -281,7 +269,7 @@
             // btnSend
             // 
             this.btnSend.Location = new System.Drawing.Point(444, 209);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 29);
             this.btnSend.TabIndex = 3;
@@ -292,7 +280,7 @@
             // 
             this.richTextBox3.BackColor = System.Drawing.Color.White;
             this.richTextBox3.Location = new System.Drawing.Point(13, 1);
-            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(529, 199);
             this.richTextBox3.TabIndex = 2;
@@ -302,7 +290,7 @@
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.White;
             this.richTextBox2.Location = new System.Drawing.Point(8, 29);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
             this.richTextBox2.Size = new System.Drawing.Size(489, 248);
@@ -329,26 +317,6 @@
             this.toolStripButton15.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton15.Text = "toolStripButton15";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(-3, 55);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(309, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "资料共享列表";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(-3, 28);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(309, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "发言申请人列表";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // toolStripButtonDaYi
             // 
             this.toolStripButtonDaYi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -365,7 +333,7 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.toolStrip7);
             this.panel11.Location = new System.Drawing.Point(1399, 414);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(181, 106);
             this.panel11.TabIndex = 65;
@@ -431,21 +399,11 @@
             this.toolStripButton14.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton14.Text = "toolStripButton14";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(-3, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(309, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "听课人员列表";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Location = new System.Drawing.Point(311, -4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(880, 40);
             this.panel1.TabIndex = 44;
@@ -510,7 +468,7 @@
             // 
             this.btnCommunicate.Image = global::IM.Properties.Resources.btnCommunicate;
             this.btnCommunicate.Location = new System.Drawing.Point(1553, 809);
-            this.btnCommunicate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCommunicate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCommunicate.Name = "btnCommunicate";
             this.btnCommunicate.Size = new System.Drawing.Size(100, 29);
             this.btnCommunicate.TabIndex = 57;
@@ -519,8 +477,8 @@
             // btnFile
             // 
             this.btnFile.Image = global::IM.Properties.Resources.btnFile;
-            this.btnFile.Location = new System.Drawing.Point(1427, 809);
-            this.btnFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFile.Location = new System.Drawing.Point(1278, 54);
+            this.btnFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnFile.Name = "btnFile";
             this.btnFile.Size = new System.Drawing.Size(100, 29);
             this.btnFile.TabIndex = 56;
@@ -529,8 +487,8 @@
             // BtnTeach
             // 
             this.BtnTeach.Image = global::IM.Properties.Resources.btnTeach;
-            this.BtnTeach.Location = new System.Drawing.Point(1393, 761);
-            this.BtnTeach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnTeach.Location = new System.Drawing.Point(1397, 761);
+            this.BtnTeach.Margin = new System.Windows.Forms.Padding(4);
             this.BtnTeach.Name = "BtnTeach";
             this.BtnTeach.Size = new System.Drawing.Size(100, 29);
             this.BtnTeach.TabIndex = 54;
@@ -540,7 +498,7 @@
             // 
             this.checkBoxCloseEquipment.AutoSize = true;
             this.checkBoxCloseEquipment.Location = new System.Drawing.Point(1427, 846);
-            this.checkBoxCloseEquipment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxCloseEquipment.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxCloseEquipment.Name = "checkBoxCloseEquipment";
             this.checkBoxCloseEquipment.Size = new System.Drawing.Size(89, 19);
             this.checkBoxCloseEquipment.TabIndex = 53;
@@ -551,7 +509,7 @@
             // 
             this.btnExit.Image = global::IM.Properties.Resources.btnExit;
             this.btnExit.Location = new System.Drawing.Point(1683, 809);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 29);
             this.btnExit.TabIndex = 52;
@@ -574,7 +532,7 @@
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.toolStrip5);
             this.panel9.Location = new System.Drawing.Point(1399, 300);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(181, 106);
             this.panel9.TabIndex = 59;
@@ -632,21 +590,39 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.listView1);
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.button1);
+            this.panel8.Controls.Add(this.sideBar1);
             this.panel8.Location = new System.Drawing.Point(0, 212);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(303, 654);
             this.panel8.TabIndex = 58;
+            // 
+            // sideBar1
+            // 
+            this.sideBar1.AllowDragItem = false;
+            this.sideBar1.BackColor = System.Drawing.Color.Transparent;
+            this.sideBar1.FlatStyle = Aptech.UI.SbFlatStyle.Normal;
+            this.sideBar1.GroupHeaderBackColor = System.Drawing.Color.LightSkyBlue;
+            this.sideBar1.GroupTextColor = System.Drawing.Color.Black;
+            this.sideBar1.ImageList = null;
+            this.sideBar1.ItemContextMenuStrip = null;
+            this.sideBar1.ItemStyle = Aptech.UI.SbItemStyle.PushButton;
+            this.sideBar1.ItemTextColor = System.Drawing.Color.White;
+            this.sideBar1.Location = new System.Drawing.Point(0, 0);
+            this.sideBar1.Name = "sideBar1";
+            this.sideBar1.RadioSelectedItem = null;
+            this.sideBar1.Size = new System.Drawing.Size(303, 654);
+            this.sideBar1.TabIndex = 0;
+            this.sideBar1.View = Aptech.UI.SbView.LargeIcon;
+            this.sideBar1.VisibleGroup = null;
+            this.sideBar1.VisibleGroupIndex = -1;
+            this.sideBar1.Load += new System.EventHandler(this.sideBar1_Load_1);
             // 
             // btnHelp
             // 
             this.btnHelp.Image = global::IM.Properties.Resources.btnHelp;
             this.btnHelp.Location = new System.Drawing.Point(1683, 761);
-            this.btnHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(100, 29);
             this.btnHelp.TabIndex = 51;
@@ -658,7 +634,7 @@
             this.richTextBoxClassInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBoxClassInfo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.richTextBoxClassInfo.Location = new System.Drawing.Point(0, -4);
-            this.richTextBoxClassInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBoxClassInfo.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxClassInfo.Name = "richTextBoxClassInfo";
             this.richTextBoxClassInfo.ReadOnly = true;
             this.richTextBoxClassInfo.Size = new System.Drawing.Size(301, 206);
@@ -755,7 +731,7 @@
             // 
             this.btnSetUp.Image = global::IM.Properties.Resources.btnSet;
             this.btnSetUp.Location = new System.Drawing.Point(1553, 761);
-            this.btnSetUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetUp.Name = "btnSetUp";
             this.btnSetUp.Size = new System.Drawing.Size(100, 29);
             this.btnSetUp.TabIndex = 50;
@@ -785,7 +761,7 @@
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Location = new System.Drawing.Point(311, 89);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1065, 499);
             this.panel3.TabIndex = 46;
@@ -893,7 +869,7 @@
             // 
             this.panel2.Controls.Add(this.toolStrip2);
             this.panel2.Location = new System.Drawing.Point(311, 39);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(880, 40);
             this.panel2.TabIndex = 45;
@@ -905,7 +881,7 @@
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.toolStrip4);
             this.panel7.Location = new System.Drawing.Point(1397, -4);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(399, 281);
             this.panel7.TabIndex = 49;
@@ -917,7 +893,7 @@
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.toolStrip9);
             this.panel13.Location = new System.Drawing.Point(1399, 528);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(181, 106);
             this.panel13.TabIndex = 66;
@@ -980,7 +956,7 @@
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.toolStrip12);
             this.panel16.Location = new System.Drawing.Point(1615, 641);
-            this.panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(181, 106);
             this.panel16.TabIndex = 61;
@@ -1094,7 +1070,7 @@
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.toolStrip11);
             this.panel15.Location = new System.Drawing.Point(1397, 641);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(181, 106);
             this.panel15.TabIndex = 62;
@@ -1147,7 +1123,7 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.toolStrip8);
             this.panel12.Location = new System.Drawing.Point(1615, 414);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(181, 106);
             this.panel12.TabIndex = 64;
@@ -1230,7 +1206,7 @@
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.toolStrip6);
             this.panel10.Location = new System.Drawing.Point(1615, 300);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(181, 106);
             this.panel10.TabIndex = 63;
@@ -1273,7 +1249,7 @@
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.toolStrip10);
             this.panel14.Location = new System.Drawing.Point(1615, 528);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(181, 106);
             this.panel14.TabIndex = 60;
@@ -1281,8 +1257,8 @@
             // btnSpeech
             // 
             this.btnSpeech.Image = global::IM.Properties.Resources.btnSpeech;
-            this.btnSpeech.Location = new System.Drawing.Point(1427, 761);
-            this.btnSpeech.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpeech.Location = new System.Drawing.Point(1400, 809);
+            this.btnSpeech.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpeech.Name = "btnSpeech";
             this.btnSpeech.Size = new System.Drawing.Size(100, 29);
             this.btnSpeech.TabIndex = 55;
@@ -1290,15 +1266,14 @@
             // 
             // frmClassroom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(221)))), ((int)(((byte)(237)))));
             this.ClientSize = new System.Drawing.Size(1799, 875);
+            this.Controls.Add(this.btnFile);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCommunicate);
-            this.Controls.Add(this.btnFile);
             this.Controls.Add(this.BtnTeach);
             this.Controls.Add(this.checkBoxCloseEquipment);
             this.Controls.Add(this.btnExit);
@@ -1317,12 +1292,12 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.btnSpeech);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClassroom";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "教室 - 教室名称";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1379,7 +1354,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ToolStripButton toolStripButtonQianDao;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
@@ -1394,8 +1368,6 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripButton toolStripButton15;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripButton toolStripButtonDaYi;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.ToolStrip toolStrip7;
@@ -1404,7 +1376,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Windows.Forms.ToolStripButton toolStripButton9;
         private System.Windows.Forms.ToolStripButton toolStripButton14;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonBaiban;
@@ -1487,6 +1458,7 @@
         private System.Windows.Forms.ToolStrip toolStrip10;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button btnSpeech;
+        private Aptech.UI.SideBar sideBar1;
 
     }
 }

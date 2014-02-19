@@ -85,10 +85,11 @@
             this.richTextBoxRMsg.BackColor = System.Drawing.Color.White;
             this.richTextBoxRMsg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxRMsg.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.richTextBoxRMsg.Location = new System.Drawing.Point(8, 38);
+            this.richTextBoxRMsg.Location = new System.Drawing.Point(11, 48);
+            this.richTextBoxRMsg.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRMsg.Name = "richTextBoxRMsg";
             this.richTextBoxRMsg.ReadOnly = true;
-            this.richTextBoxRMsg.Size = new System.Drawing.Size(389, 251);
+            this.richTextBoxRMsg.Size = new System.Drawing.Size(519, 314);
             this.richTextBoxRMsg.TabIndex = 18;
             this.richTextBoxRMsg.Text = "";
             // 
@@ -117,9 +118,10 @@
             this.pictureBoxMeShow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxMeShow.BackgroundImage = global::IM.Properties.Resources.teachermanager_头像;
             this.pictureBoxMeShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMeShow.Location = new System.Drawing.Point(414, 307);
+            this.pictureBoxMeShow.Location = new System.Drawing.Point(552, 291);
+            this.pictureBoxMeShow.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxMeShow.Name = "pictureBoxMeShow";
-            this.pictureBoxMeShow.Size = new System.Drawing.Size(105, 105);
+            this.pictureBoxMeShow.Size = new System.Drawing.Size(140, 131);
             this.pictureBoxMeShow.TabIndex = 22;
             this.pictureBoxMeShow.TabStop = false;
             // 
@@ -127,18 +129,20 @@
             // 
             this.labelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelInfo.AutoSize = true;
-            this.labelInfo.Location = new System.Drawing.Point(416, 151);
+            this.labelInfo.Location = new System.Drawing.Point(555, 189);
+            this.labelInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(53, 12);
+            this.labelInfo.Size = new System.Drawing.Size(67, 15);
             this.labelInfo.TabIndex = 23;
             this.labelInfo.Text = "个人信息";
             // 
             // btnSend
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSend.Location = new System.Drawing.Point(319, 428);
+            this.btnSend.Location = new System.Drawing.Point(425, 535);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.Size = new System.Drawing.Size(100, 29);
             this.btnSend.TabIndex = 19;
             this.btnSend.Text = "发送(&S)";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -146,23 +150,23 @@
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(219, 428);
+            this.btnClose.Location = new System.Drawing.Point(292, 535);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(100, 29);
             this.btnClose.TabIndex = 20;
             this.btnClose.Text = "关闭(&C)";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.richTextBox1.Location = new System.Drawing.Point(8, 323);
+            this.richTextBox1.Location = new System.Drawing.Point(11, 405);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(389, 98);
+            this.richTextBox1.Size = new System.Drawing.Size(519, 122);
             this.richTextBox1.TabIndex = 17;
             this.richTextBox1.Text = "";
             // 
@@ -181,8 +185,8 @@
             this.toolStripButtonGongShiBianJi});
             this.toolStrip2.Location = new System.Drawing.Point(0, -2);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.toolStrip2.Size = new System.Drawing.Size(389, 29);
+            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 27, 0);
+            this.toolStrip2.Size = new System.Drawing.Size(519, 36);
             this.toolStrip2.TabIndex = 5;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -191,15 +195,16 @@
             this.toolStripButtonShiPing.Image = global::IM.Properties.Resources.icon_video;
             this.toolStripButtonShiPing.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonShiPing.Name = "toolStripButtonShiPing";
-            this.toolStripButtonShiPing.Size = new System.Drawing.Size(52, 37);
+            this.toolStripButtonShiPing.Size = new System.Drawing.Size(59, 47);
             this.toolStripButtonShiPing.Text = "视频";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.toolStrip2);
-            this.panel1.Location = new System.Drawing.Point(8, 295);
+            this.panel1.Location = new System.Drawing.Point(11, 369);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(372, 22);
+            this.panel1.Size = new System.Drawing.Size(496, 28);
             this.panel1.TabIndex = 24;
             // 
             // toolStrip1
@@ -218,7 +223,8 @@
             this.toolStripButtonLiaoTianJiLu});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(389, 40);
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.toolStrip1.Size = new System.Drawing.Size(519, 50);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -227,7 +233,7 @@
             this.toolStripButtonYuYin.Image = global::IM.Properties.Resources.icon_speech;
             this.toolStripButtonYuYin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonYuYin.Name = "toolStripButtonYuYin";
-            this.toolStripButtonYuYin.Size = new System.Drawing.Size(52, 37);
+            this.toolStripButtonYuYin.Size = new System.Drawing.Size(59, 47);
             this.toolStripButtonYuYin.Text = "语音";
             // 
             // toolStripButtonWenJian
@@ -235,15 +241,16 @@
             this.toolStripButtonWenJian.Image = global::IM.Properties.Resources.icon_file;
             this.toolStripButtonWenJian.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonWenJian.Name = "toolStripButtonWenJian";
-            this.toolStripButtonWenJian.Size = new System.Drawing.Size(52, 37);
+            this.toolStripButtonWenJian.Size = new System.Drawing.Size(59, 47);
             this.toolStripButtonWenJian.Text = "文件";
+            this.toolStripButtonWenJian.Click += new System.EventHandler(this.toolStripButtonWenJian_Click);
             // 
             // toolStripButtonBaiBan
             // 
             this.toolStripButtonBaiBan.Image = global::IM.Properties.Resources.icon_writeBoard;
             this.toolStripButtonBaiBan.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonBaiBan.Name = "toolStripButtonBaiBan";
-            this.toolStripButtonBaiBan.Size = new System.Drawing.Size(52, 37);
+            this.toolStripButtonBaiBan.Size = new System.Drawing.Size(59, 47);
             this.toolStripButtonBaiBan.Text = "白板";
             // 
             // toolStripButtonLiaoTianJiLu
@@ -251,21 +258,23 @@
             this.toolStripButtonLiaoTianJiLu.Image = global::IM.Properties.Resources.icon_chatHistory;
             this.toolStripButtonLiaoTianJiLu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonLiaoTianJiLu.Name = "toolStripButtonLiaoTianJiLu";
-            this.toolStripButtonLiaoTianJiLu.Size = new System.Drawing.Size(76, 37);
+            this.toolStripButtonLiaoTianJiLu.Size = new System.Drawing.Size(89, 47);
             this.toolStripButtonLiaoTianJiLu.Text = "聊天记录";
+            this.toolStripButtonLiaoTianJiLu.Click += new System.EventHandler(this.toolStripButtonLiaoTianJiLu_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.toolStrip1);
-            this.panel2.Location = new System.Drawing.Point(8, 0);
+            this.panel2.Location = new System.Drawing.Point(11, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(386, 32);
+            this.panel2.Size = new System.Drawing.Size(515, 49);
             this.panel2.TabIndex = 25;
             // 
             // skinEngine1
             // 
             this.skinEngine1.SerialNumber = "";
-            this.skinEngine1.SkinFile = "D:\\Documents\\Visual Studio 2010\\Projects\\IM\\IM\\bin\\Debug\\MP10.ssk";
+            this.skinEngine1.SkinFile = null;
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
             // pictureBoxChatShow
@@ -273,18 +282,19 @@
             this.pictureBoxChatShow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxChatShow.BackgroundImage = global::IM.Properties.Resources.teachermanager_头像;
             this.pictureBoxChatShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxChatShow.Location = new System.Drawing.Point(414, 34);
+            this.pictureBoxChatShow.Location = new System.Drawing.Point(552, 42);
+            this.pictureBoxChatShow.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxChatShow.Name = "pictureBoxChatShow";
-            this.pictureBoxChatShow.Size = new System.Drawing.Size(105, 105);
+            this.pictureBoxChatShow.Size = new System.Drawing.Size(140, 131);
             this.pictureBoxChatShow.TabIndex = 21;
             this.pictureBoxChatShow.TabStop = false;
             // 
             // frmChat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(221)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(527, 451);
+            this.ClientSize = new System.Drawing.Size(703, 564);
             this.Controls.Add(this.richTextBoxRMsg);
             this.Controls.Add(this.pictureBoxMeShow);
             this.Controls.Add(this.labelInfo);
@@ -294,7 +304,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBoxChatShow);
-            this.MinimumSize = new System.Drawing.Size(543, 489);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(718, 600);
             this.Name = "frmChat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "与。。聊天中";
