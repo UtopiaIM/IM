@@ -168,9 +168,10 @@
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(2, 70);
+            this.listView1.Location = new System.Drawing.Point(3, 88);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(224, 450);
+            this.listView1.Size = new System.Drawing.Size(297, 562);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -180,7 +181,7 @@
             this.toolStripButtonQianDao.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonQianDao.Image")));
             this.toolStripButtonQianDao.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonQianDao.Name = "toolStripButtonQianDao";
-            this.toolStripButtonQianDao.Size = new System.Drawing.Size(48, 32);
+            this.toolStripButtonQianDao.Size = new System.Drawing.Size(57, 41);
             this.toolStripButtonQianDao.Text = "签到(&I)";
             // 
             // panel4
@@ -191,9 +192,10 @@
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.richTextBox2);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(233, 477);
+            this.panel4.Location = new System.Drawing.Point(311, 596);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 226);
+            this.panel4.Size = new System.Drawing.Size(1067, 282);
             this.panel4.TabIndex = 48;
             // 
             // panel5
@@ -202,17 +204,19 @@
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.btnSend);
             this.panel5.Controls.Add(this.richTextBox3);
-            this.panel5.Location = new System.Drawing.Point(380, 23);
+            this.panel5.Location = new System.Drawing.Point(507, 29);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(410, 190);
+            this.panel5.Size = new System.Drawing.Size(547, 238);
             this.panel5.TabIndex = 3;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.toolStrip3);
-            this.panel6.Location = new System.Drawing.Point(10, 167);
+            this.panel6.Location = new System.Drawing.Point(13, 209);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(307, 23);
+            this.panel6.Size = new System.Drawing.Size(409, 29);
             this.panel6.TabIndex = 4;
             // 
             // toolStrip3
@@ -228,10 +232,10 @@
             this.toolStripButtonBiaoQing,
             this.toolStripButtonTuPian,
             this.toolStripButtonGongShiBianJi});
-            this.toolStrip3.Location = new System.Drawing.Point(0, -3);
+            this.toolStrip3.Location = new System.Drawing.Point(0, -4);
             this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.toolStrip3.Size = new System.Drawing.Size(320, 29);
+            this.toolStrip3.Padding = new System.Windows.Forms.Padding(0, 0, 27, 0);
+            this.toolStrip3.Size = new System.Drawing.Size(427, 36);
             this.toolStrip3.TabIndex = 6;
             this.toolStrip3.Text = "toolStrip3";
             // 
@@ -276,9 +280,10 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(333, 167);
+            this.btnSend.Location = new System.Drawing.Point(444, 209);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.Size = new System.Drawing.Size(100, 29);
             this.btnSend.TabIndex = 3;
             this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -286,28 +291,31 @@
             // richTextBox3
             // 
             this.richTextBox3.BackColor = System.Drawing.Color.White;
-            this.richTextBox3.Location = new System.Drawing.Point(10, 1);
+            this.richTextBox3.Location = new System.Drawing.Point(13, 1);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(398, 160);
+            this.richTextBox3.Size = new System.Drawing.Size(529, 199);
             this.richTextBox3.TabIndex = 2;
             this.richTextBox3.Text = "";
             // 
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.White;
-            this.richTextBox2.Location = new System.Drawing.Point(6, 23);
+            this.richTextBox2.Location = new System.Drawing.Point(8, 29);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(368, 199);
+            this.richTextBox2.Size = new System.Drawing.Size(489, 248);
             this.richTextBox2.TabIndex = 2;
             this.richTextBox2.Text = "";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Location = new System.Drawing.Point(5, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "交流区";
             // 
@@ -323,18 +331,20 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(-2, 44);
+            this.button3.Location = new System.Drawing.Point(-3, 55);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(232, 23);
+            this.button3.Size = new System.Drawing.Size(309, 29);
             this.button3.TabIndex = 2;
             this.button3.Text = "资料共享列表";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(-2, 22);
+            this.button2.Location = new System.Drawing.Point(-3, 28);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(232, 23);
+            this.button2.Size = new System.Drawing.Size(309, 29);
             this.button2.TabIndex = 1;
             this.button2.Text = "发言申请人列表";
             this.button2.UseVisualStyleBackColor = true;
@@ -345,7 +355,7 @@
             this.toolStripButtonDaYi.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonDaYi.Image")));
             this.toolStripButtonDaYi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonDaYi.Name = "toolStripButtonDaYi";
-            this.toolStripButtonDaYi.Size = new System.Drawing.Size(52, 32);
+            this.toolStripButtonDaYi.Size = new System.Drawing.Size(64, 41);
             this.toolStripButtonDaYi.Text = "答疑(&A)";
             // 
             // panel11
@@ -354,9 +364,10 @@
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.toolStrip7);
-            this.panel11.Location = new System.Drawing.Point(1049, 331);
+            this.panel11.Location = new System.Drawing.Point(1399, 414);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(136, 85);
+            this.panel11.Size = new System.Drawing.Size(181, 106);
             this.panel11.TabIndex = 65;
             // 
             // toolStrip7
@@ -368,16 +379,16 @@
             this.toolStripButton7,
             this.toolStripButton8,
             this.toolStripButton9});
-            this.toolStrip7.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip7.Location = new System.Drawing.Point(0, 79);
             this.toolStrip7.Name = "toolStrip7";
-            this.toolStrip7.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip7.Size = new System.Drawing.Size(179, 25);
             this.toolStrip7.TabIndex = 0;
             this.toolStrip7.Text = "toolStrip7";
             // 
             // toolStripLabel4
             // 
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(40, 22);
+            this.toolStripLabel4.Size = new System.Drawing.Size(49, 22);
             this.toolStripLabel4.Text = "同学C";
             // 
             // toolStripButton7
@@ -422,9 +433,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(-2, 0);
+            this.button1.Location = new System.Drawing.Point(-3, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 23);
+            this.button1.Size = new System.Drawing.Size(309, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "听课人员列表";
             this.button1.UseVisualStyleBackColor = true;
@@ -432,9 +444,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.toolStrip1);
-            this.panel1.Location = new System.Drawing.Point(233, -3);
+            this.panel1.Location = new System.Drawing.Point(311, -4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(660, 32);
+            this.panel1.Size = new System.Drawing.Size(880, 40);
             this.panel1.TabIndex = 44;
             // 
             // toolStrip1
@@ -453,7 +466,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(670, 35);
+            this.toolStrip1.Size = new System.Drawing.Size(893, 44);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -463,7 +476,7 @@
             this.toolStripButtonBaiban.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBaiban.Image")));
             this.toolStripButtonBaiban.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonBaiban.Name = "toolStripButtonBaiban";
-            this.toolStripButtonBaiban.Size = new System.Drawing.Size(56, 32);
+            this.toolStripButtonBaiban.Size = new System.Drawing.Size(68, 41);
             this.toolStripButtonBaiban.Text = "白板(&W)";
             // 
             // toolStripButtonYinYingBoFang
@@ -472,7 +485,7 @@
             this.toolStripButtonYinYingBoFang.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonYinYingBoFang.Image")));
             this.toolStripButtonYinYingBoFang.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonYinYingBoFang.Name = "toolStripButtonYinYingBoFang";
-            this.toolStripButtonYinYingBoFang.Size = new System.Drawing.Size(75, 32);
+            this.toolStripButtonYinYingBoFang.Size = new System.Drawing.Size(92, 41);
             this.toolStripButtonYinYingBoFang.Text = "影音播放(&P)";
             // 
             // toolStripButtonGongXiangZuoMian
@@ -481,7 +494,7 @@
             this.toolStripButtonGongXiangZuoMian.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonGongXiangZuoMian.Image")));
             this.toolStripButtonGongXiangZuoMian.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonGongXiangZuoMian.Name = "toolStripButtonGongXiangZuoMian";
-            this.toolStripButtonGongXiangZuoMian.Size = new System.Drawing.Size(75, 32);
+            this.toolStripButtonGongXiangZuoMian.Size = new System.Drawing.Size(92, 41);
             this.toolStripButtonGongXiangZuoMian.Text = "共享桌面(&S)";
             // 
             // toolStripButtonFenZuTaoLun
@@ -490,42 +503,46 @@
             this.toolStripButtonFenZuTaoLun.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFenZuTaoLun.Image")));
             this.toolStripButtonFenZuTaoLun.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonFenZuTaoLun.Name = "toolStripButtonFenZuTaoLun";
-            this.toolStripButtonFenZuTaoLun.Size = new System.Drawing.Size(75, 32);
+            this.toolStripButtonFenZuTaoLun.Size = new System.Drawing.Size(92, 41);
             this.toolStripButtonFenZuTaoLun.Text = "分组讨论(&T)";
             // 
             // btnCommunicate
             // 
             this.btnCommunicate.Image = global::IM.Properties.Resources.btnCommunicate;
-            this.btnCommunicate.Location = new System.Drawing.Point(1165, 647);
+            this.btnCommunicate.Location = new System.Drawing.Point(1553, 809);
+            this.btnCommunicate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCommunicate.Name = "btnCommunicate";
-            this.btnCommunicate.Size = new System.Drawing.Size(75, 23);
+            this.btnCommunicate.Size = new System.Drawing.Size(100, 29);
             this.btnCommunicate.TabIndex = 57;
             this.btnCommunicate.UseVisualStyleBackColor = true;
             // 
             // btnFile
             // 
             this.btnFile.Image = global::IM.Properties.Resources.btnFile;
-            this.btnFile.Location = new System.Drawing.Point(1070, 647);
+            this.btnFile.Location = new System.Drawing.Point(1427, 809);
+            this.btnFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFile.Name = "btnFile";
-            this.btnFile.Size = new System.Drawing.Size(75, 23);
+            this.btnFile.Size = new System.Drawing.Size(100, 29);
             this.btnFile.TabIndex = 56;
             this.btnFile.UseVisualStyleBackColor = true;
             // 
             // BtnTeach
             // 
             this.BtnTeach.Image = global::IM.Properties.Resources.btnTeach;
-            this.BtnTeach.Location = new System.Drawing.Point(1045, 609);
+            this.BtnTeach.Location = new System.Drawing.Point(1393, 761);
+            this.BtnTeach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnTeach.Name = "BtnTeach";
-            this.BtnTeach.Size = new System.Drawing.Size(75, 23);
+            this.BtnTeach.Size = new System.Drawing.Size(100, 29);
             this.BtnTeach.TabIndex = 54;
             this.BtnTeach.UseVisualStyleBackColor = true;
             // 
             // checkBoxCloseEquipment
             // 
             this.checkBoxCloseEquipment.AutoSize = true;
-            this.checkBoxCloseEquipment.Location = new System.Drawing.Point(1070, 677);
+            this.checkBoxCloseEquipment.Location = new System.Drawing.Point(1427, 846);
+            this.checkBoxCloseEquipment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxCloseEquipment.Name = "checkBoxCloseEquipment";
-            this.checkBoxCloseEquipment.Size = new System.Drawing.Size(72, 16);
+            this.checkBoxCloseEquipment.Size = new System.Drawing.Size(89, 19);
             this.checkBoxCloseEquipment.TabIndex = 53;
             this.checkBoxCloseEquipment.Text = "关闭设备";
             this.checkBoxCloseEquipment.UseVisualStyleBackColor = true;
@@ -533,9 +550,10 @@
             // btnExit
             // 
             this.btnExit.Image = global::IM.Properties.Resources.btnExit;
-            this.btnExit.Location = new System.Drawing.Point(1262, 647);
+            this.btnExit.Location = new System.Drawing.Point(1683, 809);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(100, 29);
             this.btnExit.TabIndex = 52;
             this.btnExit.UseVisualStyleBackColor = true;
             // 
@@ -555,9 +573,10 @@
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.toolStrip5);
-            this.panel9.Location = new System.Drawing.Point(1049, 240);
+            this.panel9.Location = new System.Drawing.Point(1399, 300);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(136, 85);
+            this.panel9.Size = new System.Drawing.Size(181, 106);
             this.panel9.TabIndex = 59;
             // 
             // toolStrip5
@@ -569,16 +588,16 @@
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3});
-            this.toolStrip5.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip5.Location = new System.Drawing.Point(0, 79);
             this.toolStrip5.Name = "toolStrip5";
-            this.toolStrip5.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip5.Size = new System.Drawing.Size(179, 25);
             this.toolStrip5.TabIndex = 0;
             this.toolStrip5.Text = "toolStrip5";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(40, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(50, 22);
             this.toolStripLabel2.Text = "同学A";
             // 
             // toolStripButton1
@@ -617,17 +636,19 @@
             this.panel8.Controls.Add(this.button3);
             this.panel8.Controls.Add(this.button2);
             this.panel8.Controls.Add(this.button1);
-            this.panel8.Location = new System.Drawing.Point(0, 170);
+            this.panel8.Location = new System.Drawing.Point(0, 212);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(227, 523);
+            this.panel8.Size = new System.Drawing.Size(303, 654);
             this.panel8.TabIndex = 58;
             // 
             // btnHelp
             // 
             this.btnHelp.Image = global::IM.Properties.Resources.btnHelp;
-            this.btnHelp.Location = new System.Drawing.Point(1262, 609);
+            this.btnHelp.Location = new System.Drawing.Point(1683, 761);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(75, 23);
+            this.btnHelp.Size = new System.Drawing.Size(100, 29);
             this.btnHelp.TabIndex = 51;
             this.btnHelp.UseVisualStyleBackColor = true;
             // 
@@ -636,17 +657,18 @@
             this.richTextBoxClassInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBoxClassInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBoxClassInfo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.richTextBoxClassInfo.Location = new System.Drawing.Point(0, -3);
+            this.richTextBoxClassInfo.Location = new System.Drawing.Point(0, -4);
+            this.richTextBoxClassInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBoxClassInfo.Name = "richTextBoxClassInfo";
             this.richTextBoxClassInfo.ReadOnly = true;
-            this.richTextBoxClassInfo.Size = new System.Drawing.Size(227, 166);
+            this.richTextBoxClassInfo.Size = new System.Drawing.Size(301, 206);
             this.richTextBoxClassInfo.TabIndex = 47;
             this.richTextBoxClassInfo.Text = "授课老师:王老师\n授课时间:2014年1月5日9:00至2014年1月5日10:00\n课程描述:小学数学课后习题讲解";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 44);
             // 
             // toolStripButtonXiangPiCa
             // 
@@ -654,7 +676,7 @@
             this.toolStripButtonXiangPiCa.Image = global::IM.Properties.Resources.icon_eraser;
             this.toolStripButtonXiangPiCa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonXiangPiCa.Name = "toolStripButtonXiangPiCa";
-            this.toolStripButtonXiangPiCa.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonXiangPiCa.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonXiangPiCa.Text = "橡皮擦";
             // 
             // toolStripButtonWenZi
@@ -663,7 +685,7 @@
             this.toolStripButtonWenZi.Image = global::IM.Properties.Resources.aio_quickbar_font;
             this.toolStripButtonWenZi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonWenZi.Name = "toolStripButtonWenZi";
-            this.toolStripButtonWenZi.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonWenZi.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonWenZi.Text = "文字";
             // 
             // toolStripButtonGongShi
@@ -672,7 +694,7 @@
             this.toolStripButtonGongShi.Image = global::IM.Properties.Resources.aio_quickbar_math;
             this.toolStripButtonGongShi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonGongShi.Name = "toolStripButtonGongShi";
-            this.toolStripButtonGongShi.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonGongShi.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonGongShi.Text = "公式";
             // 
             // toolStripButtonCuXi
@@ -681,7 +703,7 @@
             this.toolStripButtonCuXi.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonCuXi.Image")));
             this.toolStripButtonCuXi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonCuXi.Name = "toolStripButtonCuXi";
-            this.toolStripButtonCuXi.Size = new System.Drawing.Size(36, 32);
+            this.toolStripButtonCuXi.Size = new System.Drawing.Size(43, 41);
             this.toolStripButtonCuXi.Text = "粗细";
             // 
             // toolStripButtonYanSe
@@ -690,13 +712,13 @@
             this.toolStripButtonYanSe.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonYanSe.Image")));
             this.toolStripButtonYanSe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonYanSe.Name = "toolStripButtonYanSe";
-            this.toolStripButtonYanSe.Size = new System.Drawing.Size(36, 32);
+            this.toolStripButtonYanSe.Size = new System.Drawing.Size(43, 41);
             this.toolStripButtonYanSe.Text = "颜色";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 44);
             // 
             // toolStripButton13
             // 
@@ -717,24 +739,25 @@
             this.toolStripButton13,
             this.toolStripButton14,
             this.toolStripButton15});
-            this.toolStrip4.Location = new System.Drawing.Point(0, 198);
+            this.toolStrip4.Location = new System.Drawing.Point(0, 254);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(298, 25);
+            this.toolStrip4.Size = new System.Drawing.Size(397, 25);
             this.toolStrip4.TabIndex = 0;
             this.toolStrip4.Text = "toolStrip4";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(54, 22);
             this.toolStripLabel1.Text = "王老师";
             // 
             // btnSetUp
             // 
             this.btnSetUp.Image = global::IM.Properties.Resources.btnSet;
-            this.btnSetUp.Location = new System.Drawing.Point(1165, 609);
+            this.btnSetUp.Location = new System.Drawing.Point(1553, 761);
+            this.btnSetUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSetUp.Name = "btnSetUp";
-            this.btnSetUp.Size = new System.Drawing.Size(75, 23);
+            this.btnSetUp.Size = new System.Drawing.Size(100, 29);
             this.btnSetUp.TabIndex = 50;
             this.btnSetUp.UseVisualStyleBackColor = true;
             // 
@@ -744,7 +767,7 @@
             this.toolStripButtonXingZhuang.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonXingZhuang.Image")));
             this.toolStripButtonXingZhuang.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonXingZhuang.Name = "toolStripButtonXingZhuang";
-            this.toolStripButtonXingZhuang.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonXingZhuang.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonXingZhuang.Text = "形状";
             // 
             // toolStripButtonZhiXian
@@ -753,7 +776,7 @@
             this.toolStripButtonZhiXian.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonZhiXian.Image")));
             this.toolStripButtonZhiXian.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonZhiXian.Name = "toolStripButtonZhiXian";
-            this.toolStripButtonZhiXian.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonZhiXian.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonZhiXian.Text = "直线";
             // 
             // panel3
@@ -761,9 +784,10 @@
             this.panel3.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Location = new System.Drawing.Point(233, 71);
+            this.panel3.Location = new System.Drawing.Point(311, 89);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 400);
+            this.panel3.Size = new System.Drawing.Size(1065, 499);
             this.panel3.TabIndex = 46;
             // 
             // toolStripButtonXinJian
@@ -772,7 +796,7 @@
             this.toolStripButtonXinJian.Image = global::IM.Properties.Resources.icon_add;
             this.toolStripButtonXinJian.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonXinJian.Name = "toolStripButtonXinJian";
-            this.toolStripButtonXinJian.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonXinJian.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonXinJian.Text = "新建";
             // 
             // toolStrip2
@@ -802,7 +826,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip2.Size = new System.Drawing.Size(670, 35);
+            this.toolStrip2.Size = new System.Drawing.Size(893, 44);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -812,7 +836,7 @@
             this.toolStripButtonBaoCun.Image = global::IM.Properties.Resources.icon_save;
             this.toolStripButtonBaoCun.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonBaoCun.Name = "toolStripButtonBaoCun";
-            this.toolStripButtonBaoCun.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonBaoCun.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonBaoCun.Text = "保存";
             // 
             // toolStripButtonShanChu
@@ -821,7 +845,7 @@
             this.toolStripButtonShanChu.Image = global::IM.Properties.Resources.icon_delete;
             this.toolStripButtonShanChu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonShanChu.Name = "toolStripButtonShanChu";
-            this.toolStripButtonShanChu.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonShanChu.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonShanChu.Text = "删除";
             // 
             // toolStripButtonHouChe
@@ -830,7 +854,7 @@
             this.toolStripButtonHouChe.Image = global::IM.Properties.Resources.icon_back;
             this.toolStripButtonHouChe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonHouChe.Name = "toolStripButtonHouChe";
-            this.toolStripButtonHouChe.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonHouChe.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonHouChe.Text = "后退";
             // 
             // toolStripButtonQianJin
@@ -839,13 +863,13 @@
             this.toolStripButtonQianJin.Image = global::IM.Properties.Resources.icon_forward;
             this.toolStripButtonQianJin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonQianJin.Name = "toolStripButtonQianJin";
-            this.toolStripButtonQianJin.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonQianJin.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonQianJin.Text = "前进";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 44);
             // 
             // toolStripButtonShuBiao
             // 
@@ -853,7 +877,7 @@
             this.toolStripButtonShuBiao.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonShuBiao.Image")));
             this.toolStripButtonShuBiao.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonShuBiao.Name = "toolStripButtonShuBiao";
-            this.toolStripButtonShuBiao.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonShuBiao.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonShuBiao.Text = "鼠标";
             // 
             // toolStripButtonHuaBi
@@ -862,15 +886,16 @@
             this.toolStripButtonHuaBi.Image = global::IM.Properties.Resources.icon_pen;
             this.toolStripButtonHuaBi.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonHuaBi.Name = "toolStripButtonHuaBi";
-            this.toolStripButtonHuaBi.Size = new System.Drawing.Size(23, 32);
+            this.toolStripButtonHuaBi.Size = new System.Drawing.Size(23, 41);
             this.toolStripButtonHuaBi.Text = "画笔";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.toolStrip2);
-            this.panel2.Location = new System.Drawing.Point(233, 31);
+            this.panel2.Location = new System.Drawing.Point(311, 39);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(660, 32);
+            this.panel2.Size = new System.Drawing.Size(880, 40);
             this.panel2.TabIndex = 45;
             // 
             // panel7
@@ -879,9 +904,10 @@
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.toolStrip4);
-            this.panel7.Location = new System.Drawing.Point(1048, -3);
+            this.panel7.Location = new System.Drawing.Point(1397, -4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(300, 225);
+            this.panel7.Size = new System.Drawing.Size(399, 281);
             this.panel7.TabIndex = 49;
             // 
             // panel13
@@ -890,9 +916,10 @@
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.toolStrip9);
-            this.panel13.Location = new System.Drawing.Point(1049, 422);
+            this.panel13.Location = new System.Drawing.Point(1399, 528);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(136, 85);
+            this.panel13.Size = new System.Drawing.Size(181, 106);
             this.panel13.TabIndex = 66;
             // 
             // toolStrip9
@@ -904,16 +931,16 @@
             this.toolStripButton16,
             this.toolStripButton17,
             this.toolStripButton18});
-            this.toolStrip9.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip9.Location = new System.Drawing.Point(0, 79);
             this.toolStrip9.Name = "toolStrip9";
-            this.toolStrip9.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip9.Size = new System.Drawing.Size(179, 25);
             this.toolStrip9.TabIndex = 0;
             this.toolStrip9.Text = "toolStrip9";
             // 
             // toolStripLabel6
             // 
             this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(39, 22);
+            this.toolStripLabel6.Size = new System.Drawing.Size(47, 22);
             this.toolStripLabel6.Text = "同学E";
             // 
             // toolStripButton16
@@ -952,9 +979,10 @@
             this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.toolStrip12);
-            this.panel16.Location = new System.Drawing.Point(1211, 513);
+            this.panel16.Location = new System.Drawing.Point(1615, 641);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(136, 85);
+            this.panel16.Size = new System.Drawing.Size(181, 106);
             this.panel16.TabIndex = 61;
             // 
             // toolStrip12
@@ -966,16 +994,16 @@
             this.toolStripButton25,
             this.toolStripButton26,
             this.toolStripButton27});
-            this.toolStrip12.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip12.Location = new System.Drawing.Point(0, 79);
             this.toolStrip12.Name = "toolStrip12";
-            this.toolStrip12.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip12.Size = new System.Drawing.Size(179, 25);
             this.toolStrip12.TabIndex = 0;
             this.toolStrip12.Text = "toolStrip12";
             // 
             // toolStripLabel9
             // 
             this.toolStripLabel9.Name = "toolStripLabel9";
-            this.toolStripLabel9.Size = new System.Drawing.Size(41, 22);
+            this.toolStripLabel9.Size = new System.Drawing.Size(51, 22);
             this.toolStripLabel9.Text = "同学H";
             // 
             // toolStripButton25
@@ -1011,7 +1039,7 @@
             // toolStripLabel8
             // 
             this.toolStripLabel8.Name = "toolStripLabel8";
-            this.toolStripLabel8.Size = new System.Drawing.Size(41, 22);
+            this.toolStripLabel8.Size = new System.Drawing.Size(50, 22);
             this.toolStripLabel8.Text = "同学G";
             // 
             // toolStrip11
@@ -1023,9 +1051,9 @@
             this.toolStripButton22,
             this.toolStripButton23,
             this.toolStripButton24});
-            this.toolStrip11.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip11.Location = new System.Drawing.Point(0, 79);
             this.toolStrip11.Name = "toolStrip11";
-            this.toolStrip11.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip11.Size = new System.Drawing.Size(179, 25);
             this.toolStrip11.TabIndex = 0;
             this.toolStrip11.Text = "toolStrip11";
             // 
@@ -1065,9 +1093,10 @@
             this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.toolStrip11);
-            this.panel15.Location = new System.Drawing.Point(1048, 513);
+            this.panel15.Location = new System.Drawing.Point(1397, 641);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(136, 85);
+            this.panel15.Size = new System.Drawing.Size(181, 106);
             this.panel15.TabIndex = 62;
             // 
             // toolStripButton6
@@ -1093,7 +1122,7 @@
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(40, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(48, 22);
             this.toolStripLabel3.Text = "同学B";
             // 
             // toolStrip6
@@ -1105,9 +1134,9 @@
             this.toolStripButton4,
             this.toolStripButton5,
             this.toolStripButton6});
-            this.toolStrip6.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip6.Location = new System.Drawing.Point(0, 79);
             this.toolStrip6.Name = "toolStrip6";
-            this.toolStrip6.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip6.Size = new System.Drawing.Size(179, 25);
             this.toolStrip6.TabIndex = 0;
             this.toolStrip6.Text = "toolStrip6";
             // 
@@ -1117,9 +1146,10 @@
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.toolStrip8);
-            this.panel12.Location = new System.Drawing.Point(1211, 331);
+            this.panel12.Location = new System.Drawing.Point(1615, 414);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(136, 85);
+            this.panel12.Size = new System.Drawing.Size(181, 106);
             this.panel12.TabIndex = 64;
             // 
             // toolStrip8
@@ -1131,16 +1161,16 @@
             this.toolStripButton10,
             this.toolStripButton11,
             this.toolStripButton12});
-            this.toolStrip8.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip8.Location = new System.Drawing.Point(0, 79);
             this.toolStrip8.Name = "toolStrip8";
-            this.toolStrip8.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip8.Size = new System.Drawing.Size(179, 25);
             this.toolStrip8.TabIndex = 0;
             this.toolStrip8.Text = "toolStrip8";
             // 
             // toolStripLabel5
             // 
             this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(41, 22);
+            this.toolStripLabel5.Size = new System.Drawing.Size(50, 22);
             this.toolStripLabel5.Text = "同学D";
             // 
             // toolStripButton10
@@ -1199,9 +1229,10 @@
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.toolStrip6);
-            this.panel10.Location = new System.Drawing.Point(1211, 240);
+            this.panel10.Location = new System.Drawing.Point(1615, 300);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(136, 85);
+            this.panel10.Size = new System.Drawing.Size(181, 106);
             this.panel10.TabIndex = 63;
             // 
             // toolStripButton19
@@ -1217,7 +1248,7 @@
             // toolStripLabel7
             // 
             this.toolStripLabel7.Name = "toolStripLabel7";
-            this.toolStripLabel7.Size = new System.Drawing.Size(38, 22);
+            this.toolStripLabel7.Size = new System.Drawing.Size(47, 22);
             this.toolStripLabel7.Text = "同学F";
             // 
             // toolStrip10
@@ -1229,9 +1260,9 @@
             this.toolStripButton19,
             this.toolStripButton20,
             this.toolStripButton21});
-            this.toolStrip10.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip10.Location = new System.Drawing.Point(0, 79);
             this.toolStrip10.Name = "toolStrip10";
-            this.toolStrip10.Size = new System.Drawing.Size(134, 25);
+            this.toolStrip10.Size = new System.Drawing.Size(179, 25);
             this.toolStrip10.TabIndex = 0;
             this.toolStrip10.Text = "toolStrip10";
             // 
@@ -1241,26 +1272,28 @@
             this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.toolStrip10);
-            this.panel14.Location = new System.Drawing.Point(1211, 422);
+            this.panel14.Location = new System.Drawing.Point(1615, 528);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(136, 85);
+            this.panel14.Size = new System.Drawing.Size(181, 106);
             this.panel14.TabIndex = 60;
             // 
             // btnSpeech
             // 
             this.btnSpeech.Image = global::IM.Properties.Resources.btnSpeech;
-            this.btnSpeech.Location = new System.Drawing.Point(1070, 609);
+            this.btnSpeech.Location = new System.Drawing.Point(1427, 761);
+            this.btnSpeech.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpeech.Name = "btnSpeech";
-            this.btnSpeech.Size = new System.Drawing.Size(75, 23);
+            this.btnSpeech.Size = new System.Drawing.Size(100, 29);
             this.btnSpeech.TabIndex = 55;
             this.btnSpeech.UseVisualStyleBackColor = true;
             // 
             // frmClassroom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(221)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(1349, 700);
+            this.ClientSize = new System.Drawing.Size(1799, 875);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel1);
@@ -1284,6 +1317,7 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.btnSpeech);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmClassroom";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

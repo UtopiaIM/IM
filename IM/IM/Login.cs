@@ -35,8 +35,9 @@ namespace IM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            sendfile rf = new sendfile();
-            rf.Show();
+            main mai = new main();
+            mai.Show();
+            this.Hide();
         }
 
     }
