@@ -32,20 +32,20 @@
             this.username = new System.Windows.Forms.Label();
             this.username_textBox = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passwd_textbox = new System.Windows.Forms.TextBox();
             this.password2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.passwd_textbox2 = new System.Windows.Forms.TextBox();
+            this.age_textbox = new System.Windows.Forms.TextBox();
+            this.Identity_comboBox = new System.Windows.Forms.ComboBox();
+            this.sex_comboBox = new System.Windows.Forms.ComboBox();
+            this.email_textbox = new System.Windows.Forms.TextBox();
+            this.phonenum_textbox = new System.Windows.Forms.TextBox();
+            this.ok_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,12 +78,12 @@
             this.password.TabIndex = 2;
             this.password.Text = " 密  码 ：";
             // 
-            // textBox1
+            // passwd_textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(286, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 25);
-            this.textBox1.TabIndex = 3;
+            this.passwd_textbox.Location = new System.Drawing.Point(286, 82);
+            this.passwd_textbox.Name = "passwd_textbox";
+            this.passwd_textbox.Size = new System.Drawing.Size(216, 25);
+            this.passwd_textbox.TabIndex = 3;
             // 
             // password2
             // 
@@ -145,65 +145,65 @@
             this.label7.TabIndex = 11;
             this.label7.Text = " 邮  箱 ：";
             // 
-            // textBox2
+            // passwd_textbox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(287, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 25);
-            this.textBox2.TabIndex = 12;
+            this.passwd_textbox2.Location = new System.Drawing.Point(287, 133);
+            this.passwd_textbox2.Name = "passwd_textbox2";
+            this.passwd_textbox2.Size = new System.Drawing.Size(218, 25);
+            this.passwd_textbox2.TabIndex = 12;
             // 
-            // textBox5
+            // age_textbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(286, 271);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(104, 25);
-            this.textBox5.TabIndex = 15;
+            this.age_textbox.Location = new System.Drawing.Point(286, 271);
+            this.age_textbox.Name = "age_textbox";
+            this.age_textbox.Size = new System.Drawing.Size(104, 25);
+            this.age_textbox.TabIndex = 15;
             // 
-            // comboBox1
+            // Identity_comboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Identity_comboBox.FormattingEnabled = true;
+            this.Identity_comboBox.Items.AddRange(new object[] {
             "学生",
             "老师"});
-            this.comboBox1.Location = new System.Drawing.Point(286, 323);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 23);
-            this.comboBox1.TabIndex = 16;
+            this.Identity_comboBox.Location = new System.Drawing.Point(286, 323);
+            this.Identity_comboBox.Name = "Identity_comboBox";
+            this.Identity_comboBox.Size = new System.Drawing.Size(106, 23);
+            this.Identity_comboBox.TabIndex = 16;
             // 
-            // comboBox2
+            // sex_comboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.sex_comboBox.FormattingEnabled = true;
+            this.sex_comboBox.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.comboBox2.Location = new System.Drawing.Point(286, 371);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(106, 23);
-            this.comboBox2.TabIndex = 17;
+            this.sex_comboBox.Location = new System.Drawing.Point(286, 371);
+            this.sex_comboBox.Name = "sex_comboBox";
+            this.sex_comboBox.Size = new System.Drawing.Size(106, 23);
+            this.sex_comboBox.TabIndex = 17;
             // 
-            // textBox3
+            // email_textbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(287, 179);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 25);
-            this.textBox3.TabIndex = 18;
+            this.email_textbox.Location = new System.Drawing.Point(287, 179);
+            this.email_textbox.Name = "email_textbox";
+            this.email_textbox.Size = new System.Drawing.Size(218, 25);
+            this.email_textbox.TabIndex = 18;
             // 
-            // textBox4
+            // phonenum_textbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(287, 225);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 25);
-            this.textBox4.TabIndex = 19;
+            this.phonenum_textbox.Location = new System.Drawing.Point(287, 225);
+            this.phonenum_textbox.Name = "phonenum_textbox";
+            this.phonenum_textbox.Size = new System.Drawing.Size(218, 25);
+            this.phonenum_textbox.TabIndex = 19;
             // 
-            // button1
+            // ok_button
             // 
-            this.button1.Location = new System.Drawing.Point(427, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "确认";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ok_button.Location = new System.Drawing.Point(427, 371);
+            this.ok_button.Name = "ok_button";
+            this.ok_button.Size = new System.Drawing.Size(75, 23);
+            this.ok_button.TabIndex = 20;
+            this.ok_button.Text = "确认";
+            this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -227,20 +227,20 @@
             this.BackgroundImage = global::IM.Properties.Resources.regist_背景_;
             this.ClientSize = new System.Drawing.Size(574, 420);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ok_button);
+            this.Controls.Add(this.phonenum_textbox);
+            this.Controls.Add(this.email_textbox);
+            this.Controls.Add(this.sex_comboBox);
+            this.Controls.Add(this.Identity_comboBox);
+            this.Controls.Add(this.age_textbox);
+            this.Controls.Add(this.passwd_textbox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.password2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwd_textbox);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username_textBox);
             this.Controls.Add(this.username);
@@ -248,6 +248,7 @@
             this.Name = "regist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IM教育应用平台";
+            this.Load += new System.EventHandler(this.regist_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,20 +260,20 @@
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.TextBox username_textBox;
         private System.Windows.Forms.Label password;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passwd_textbox;
         private System.Windows.Forms.Label password2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox passwd_textbox2;
+        private System.Windows.Forms.TextBox age_textbox;
+        private System.Windows.Forms.ComboBox Identity_comboBox;
+        private System.Windows.Forms.ComboBox sex_comboBox;
+        private System.Windows.Forms.TextBox email_textbox;
+        private System.Windows.Forms.TextBox phonenum_textbox;
+        private System.Windows.Forms.Button ok_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }

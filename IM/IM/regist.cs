@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using IM.Model;
 
 namespace IM
 {
@@ -18,7 +19,13 @@ namespace IM
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Close();
+        }
+
+        private void regist_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
