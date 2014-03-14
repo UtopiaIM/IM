@@ -1,0 +1,1 @@
+alter table im.user add  UserSex varchar(20);

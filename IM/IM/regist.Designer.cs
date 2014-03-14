@@ -40,7 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.passwd_textbox2 = new System.Windows.Forms.TextBox();
-            this.age_textbox = new System.Windows.Forms.TextBox();
+            this.birthday_textbox = new System.Windows.Forms.TextBox();
             this.Identity_comboBox = new System.Windows.Forms.ComboBox();
             this.sex_comboBox = new System.Windows.Forms.ComboBox();
             this.email_textbox = new System.Windows.Forms.TextBox();
@@ -48,6 +48,10 @@
             this.ok_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.error_username = new System.Windows.Forms.Label();
+            this.error_password = new System.Windows.Forms.Label();
+            this.error_identity = new System.Windows.Forms.Label();
+            this.error_password2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,9 +105,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(283, 253);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 15);
+            this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 7;
-            this.label4.Text = " 年  龄 ：";
+            this.label4.Text = "出生日期：";
             // 
             // label1
             // 
@@ -152,12 +156,12 @@
             this.passwd_textbox2.Size = new System.Drawing.Size(218, 25);
             this.passwd_textbox2.TabIndex = 12;
             // 
-            // age_textbox
+            // birthday_textbox
             // 
-            this.age_textbox.Location = new System.Drawing.Point(286, 271);
-            this.age_textbox.Name = "age_textbox";
-            this.age_textbox.Size = new System.Drawing.Size(104, 25);
-            this.age_textbox.TabIndex = 15;
+            this.birthday_textbox.Location = new System.Drawing.Point(286, 271);
+            this.birthday_textbox.Name = "birthday_textbox";
+            this.birthday_textbox.Size = new System.Drawing.Size(216, 25);
+            this.birthday_textbox.TabIndex = 15;
             // 
             // Identity_comboBox
             // 
@@ -220,19 +224,70 @@
             this.skinEngine1.SkinFile = "D:\\IM\\IM\\IM\\bin\\Debug\\MP10.ssk";
             this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
+            // error_username
+            // 
+            this.error_username.AutoSize = true;
+            this.error_username.BackColor = System.Drawing.Color.Transparent;
+            this.error_username.ForeColor = System.Drawing.Color.Red;
+            this.error_username.Location = new System.Drawing.Point(508, 36);
+            this.error_username.Name = "error_username";
+            this.error_username.Size = new System.Drawing.Size(63, 15);
+            this.error_username.TabIndex = 22;
+            this.error_username.Text = "       ";
+            this.error_username.Click += new System.EventHandler(this.error_username_Click);
+            // 
+            // error_password
+            // 
+            this.error_password.AutoSize = true;
+            this.error_password.BackColor = System.Drawing.Color.Transparent;
+            this.error_password.ForeColor = System.Drawing.Color.Red;
+            this.error_password.Location = new System.Drawing.Point(508, 85);
+            this.error_password.Name = "error_password";
+            this.error_password.Size = new System.Drawing.Size(63, 15);
+            this.error_password.TabIndex = 22;
+            this.error_password.Text = "       ";
+            this.error_password.Click += new System.EventHandler(this.error_password_Click);
+            // 
+            // error_identity
+            // 
+            this.error_identity.AutoSize = true;
+            this.error_identity.BackColor = System.Drawing.Color.Transparent;
+            this.error_identity.ForeColor = System.Drawing.Color.Red;
+            this.error_identity.Location = new System.Drawing.Point(439, 323);
+            this.error_identity.Name = "error_identity";
+            this.error_identity.Size = new System.Drawing.Size(63, 15);
+            this.error_identity.TabIndex = 22;
+            this.error_identity.Text = "       ";
+            // 
+            // error_password2
+            // 
+            this.error_password2.AutoSize = true;
+            this.error_password2.BackColor = System.Drawing.Color.Transparent;
+            this.error_password2.ForeColor = System.Drawing.Color.Red;
+            this.error_password2.Location = new System.Drawing.Point(508, 136);
+            this.error_password2.Name = "error_password2";
+            this.error_password2.Size = new System.Drawing.Size(63, 15);
+            this.error_password2.TabIndex = 22;
+            this.error_password2.Text = "       ";
+            this.error_password2.Click += new System.EventHandler(this.error_password_Click);
+            // 
             // regist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IM.Properties.Resources.regist_背景_;
-            this.ClientSize = new System.Drawing.Size(574, 420);
+            this.ClientSize = new System.Drawing.Size(639, 420);
+            this.Controls.Add(this.error_identity);
+            this.Controls.Add(this.error_password2);
+            this.Controls.Add(this.error_password);
+            this.Controls.Add(this.error_username);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ok_button);
             this.Controls.Add(this.phonenum_textbox);
             this.Controls.Add(this.email_textbox);
             this.Controls.Add(this.sex_comboBox);
             this.Controls.Add(this.Identity_comboBox);
-            this.Controls.Add(this.age_textbox);
+            this.Controls.Add(this.birthday_textbox);
             this.Controls.Add(this.passwd_textbox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -268,7 +323,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox passwd_textbox2;
-        private System.Windows.Forms.TextBox age_textbox;
+        private System.Windows.Forms.TextBox birthday_textbox;
         private System.Windows.Forms.ComboBox Identity_comboBox;
         private System.Windows.Forms.ComboBox sex_comboBox;
         private System.Windows.Forms.TextBox email_textbox;
@@ -276,5 +331,9 @@
         private System.Windows.Forms.Button ok_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.Label error_username;
+        private System.Windows.Forms.Label error_password;
+        private System.Windows.Forms.Label error_identity;
+        private System.Windows.Forms.Label error_password2;
     }
 }

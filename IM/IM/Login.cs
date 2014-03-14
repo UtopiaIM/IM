@@ -6,16 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using IM.BLL;
 
 namespace IM
 {
     public partial class Login : Form
     {
+        private bool bSuccess = false;
         public Login()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 注册用户
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void regist_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             regist re = new regist();
@@ -35,9 +41,24 @@ namespace IM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            main mai = new main();
-            mai.Show();
-            this.Hide();
+            UserBLL User = new UserBLL();
+            User.user.UserName = Username_textbox.Text;
+            User.user.PassWord1 = Password_textbox.Text;
+            string[] sMessage = { "", "" };
+            bSuccess = User.Login(User.user.UserName, User.user.PassWord1, ref sMessage);
+            if (bSuccess)
+            {
+                main mai = new main();
+                mai.Show();
+                this.Hide();
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(sMessage[0]))
+                    MessageBox.Show(sMessage[0]);
+                else
+                    MessageBox.Show(sMessage[1]);
+            }
         }
         main ma;
 

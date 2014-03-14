@@ -35,7 +35,7 @@ namespace IM.Model
             get;
             set;
         }
-        public string Age
+        public string BirthDay
         {
             get;
             set;

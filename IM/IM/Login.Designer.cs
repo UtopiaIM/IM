@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Uname = new System.Windows.Forms.Label();
             this.Pword = new System.Windows.Forms.Label();
-            this.Uname_textbox = new System.Windows.Forms.TextBox();
-            this.Pword_textbox = new System.Windows.Forms.TextBox();
+            this.Username_textbox = new System.Windows.Forms.TextBox();
+            this.Password_textbox = new System.Windows.Forms.TextBox();
             this.regist_link = new System.Windows.Forms.LinkLabel();
             this.findpassword_link = new System.Windows.Forms.LinkLabel();
             this.autologin = new System.Windows.Forms.CheckBox();
@@ -67,19 +67,19 @@
             this.Pword.TabIndex = 2;
             this.Pword.Text = "密码：";
             // 
-            // Uname_textbox
+            // Username_textbox
             // 
-            this.Uname_textbox.Location = new System.Drawing.Point(83, 105);
-            this.Uname_textbox.Name = "Uname_textbox";
-            this.Uname_textbox.Size = new System.Drawing.Size(171, 25);
-            this.Uname_textbox.TabIndex = 3;
+            this.Username_textbox.Location = new System.Drawing.Point(83, 105);
+            this.Username_textbox.Name = "Username_textbox";
+            this.Username_textbox.Size = new System.Drawing.Size(171, 25);
+            this.Username_textbox.TabIndex = 3;
             // 
-            // Pword_textbox
+            // Password_textbox
             // 
-            this.Pword_textbox.Location = new System.Drawing.Point(83, 141);
-            this.Pword_textbox.Name = "Pword_textbox";
-            this.Pword_textbox.Size = new System.Drawing.Size(171, 25);
-            this.Pword_textbox.TabIndex = 4;
+            this.Password_textbox.Location = new System.Drawing.Point(83, 141);
+            this.Password_textbox.Name = "Password_textbox";
+            this.Password_textbox.Size = new System.Drawing.Size(171, 25);
+            this.Password_textbox.TabIndex = 4;
             // 
             // regist_link
             // 
@@ -178,7 +178,7 @@
             this.loginmenu.ItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
             this.loginmenu.Name = "skinContextMenuStrip1";
             this.loginmenu.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.loginmenu.Size = new System.Drawing.Size(154, 74);
+            this.loginmenu.Size = new System.Drawing.Size(154, 52);
             this.loginmenu.TitleAnamorphosis = true;
             this.loginmenu.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
             this.loginmenu.TitleRadius = 4;
@@ -209,8 +209,8 @@
             this.Controls.Add(this.autologin);
             this.Controls.Add(this.findpassword_link);
             this.Controls.Add(this.regist_link);
-            this.Controls.Add(this.Pword_textbox);
-            this.Controls.Add(this.Uname_textbox);
+            this.Controls.Add(this.Password_textbox);
+            this.Controls.Add(this.Username_textbox);
             this.Controls.Add(this.Pword);
             this.Controls.Add(this.Uname);
             this.Controls.Add(this.login_title);
@@ -232,8 +232,8 @@
         private System.Windows.Forms.PictureBox login_title;
         private System.Windows.Forms.Label Uname;
         private System.Windows.Forms.Label Pword;
-        private System.Windows.Forms.TextBox Uname_textbox;
-        private System.Windows.Forms.TextBox Pword_textbox;
+        private System.Windows.Forms.TextBox Username_textbox;
+        private System.Windows.Forms.TextBox Password_textbox;
         private System.Windows.Forms.LinkLabel regist_link;
         private System.Windows.Forms.LinkLabel findpassword_link;
         private System.Windows.Forms.CheckBox autologin;
