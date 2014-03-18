@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2014/3/11 16:26:43                           */
+/* Created on:     2014/3/17 17:25:54                           */
 /*==============================================================*/
 
 
@@ -10,9 +10,9 @@ drop table if exists Classroom;
 
 drop table if exists Course;
 
-drop table if exists FriendRelationship;
+drop table if exists FriendGroup;
 
-drop table if exists Group;
+drop table if exists FriendRelationship;
 
 drop table if exists SelectCourse;
 
@@ -61,6 +61,17 @@ create table Course
 );
 
 /*==============================================================*/
+/* Table: FriendGroup                                           */
+/*==============================================================*/
+create table FriendGroup
+(
+   GrouID               int not null,
+   UserID               int not null,
+   GrouName             varchar(20),
+   primary key (GrouID)
+);
+
+/*==============================================================*/
 /* Table: FriendRelationship                                    */
 /*==============================================================*/
 create table FriendRelationship
@@ -70,17 +81,6 @@ create table FriendRelationship
    GrouID               int not null,
    Use_UserID           int not null,
    primary key (RelaID)
-);
-
-/*==============================================================*/
-/* Table: Group                                                 */
-/*==============================================================*/
-create table Group
-(
-   GrouID               int not null,
-   UserID               int not null,
-   GrouName             varchar(20),
-   primary key (GrouID)
 );
 
 /*==============================================================*/
@@ -152,16 +152,16 @@ alter table Classroom add constraint FK_FK_Course_Classroom foreign key (CourID)
 alter table Classroom add constraint FK_FK_User_Classroom foreign key (UserID)
       references User (UserID) on delete restrict on update restrict;
 
+alter table FriendGroup add constraint FK_FK_Group_User foreign key (UserID)
+      references User (UserID) on delete restrict on update restrict;
+
 alter table FriendRelationship add constraint FK_FK_Group_FriendRelationship foreign key (GrouID)
-      references Group (GrouID) on delete restrict on update restrict;
+      references FriendGroup (GrouID) on delete restrict on update restrict;
 
 alter table FriendRelationship add constraint FK_FK_User1_FriendRelationship foreign key (UserID)
       references User (UserID) on delete restrict on update restrict;
 
 alter table FriendRelationship add constraint FK_FK_User2_FriendRelationship foreign key (Use_UserID)
-      references User (UserID) on delete restrict on update restrict;
-
-alter table Group add constraint FK_FK_Group_User foreign key (UserID)
       references User (UserID) on delete restrict on update restrict;
 
 alter table SelectCourse add constraint FK_FK_Classroom_SelectCourse foreign key (ClasID)

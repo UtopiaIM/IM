@@ -5,9 +5,14 @@ using System.Text;
 
 namespace IM.Model
 {
-    class User
+     class  User
     {
         private string m_UserName = "";
+        public int UserID
+        {
+            get;
+            set;
+        }
         public string UserName
         {
             get{return m_UserName;}
@@ -50,7 +55,17 @@ namespace IM.Model
             get;
             set;
         }
+        public string UserNickName
+        {
+            get;
+            set;
+        }
 
+        public string UserIMNum
+        {
+            get;
+            set;
+        }
 
     }
 }

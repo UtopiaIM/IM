@@ -10,12 +10,14 @@ namespace IM.BLL
 {
     class UserBLL : BaseDB
     {
-        private User m_user = new User();
-        public User user
+        private static User m_user = new User();
+
+        public  User user
         {
             get { return m_user; }
             set { m_user = value; }
         }
+
         #region 公有方法
         /// <summary>
         /// 添加用户，注册用户
@@ -35,7 +37,7 @@ namespace IM.BLL
             string sReSql = string.Empty;
             bool sSuccess = false;
             DataTable dtResult = new DataTable();
-
+            int pd=0;
             //判断输入是否符合要求
             if (string.IsNullOrEmpty(user.UserName))
             {
@@ -67,7 +69,12 @@ namespace IM.BLL
             }
             else
             {
-                if (sMessage == null)
+                for (int i=0; i < 6; i++)
+                {
+                    if (!string.IsNullOrEmpty(sMessage[i]))
+                        pd++;
+                }
+                if (pd==0)
                 {
                     DataRow drNew = dtResult.NewRow();
                     drNew["UserAccount"] = m_user.UserName;
@@ -101,7 +108,13 @@ namespace IM.BLL
             return sSuccess;
         }
 
-
+        /// <summary>
+        /// 登录信息判断
+        /// </summary>
+        /// <param name="sUserName"></param>
+        /// <param name="sPassWord"></param>
+        /// <param name="sMessage"></param>
+        /// <returns></returns>
         public bool Login(string sUserName, string sPassWord, ref string[] sMessage)
         {
             bool bSuccess = false;
@@ -127,8 +140,115 @@ namespace IM.BLL
                     bSuccess = true;
                 }
             }
+            if (bSuccess)
+            {
+                user.UserID = Convert.ToInt32(dt.Rows[0]["UserID"]);
+                user.UserNickName = dt.Rows[0]["UserNickName"].ToString();
+            }
             return bSuccess;
+        }
 
+        //public List<string[]> SearchFriend()
+        //{
+        //    List<string[]> friendlist = new List<string[]>();
+        //    string sReSql = string.Empty;
+        //    DataTable dt = new DataTable();
+            
+        //    return friendlist;
+        //}
+
+        /// <summary>
+        /// 获取用户信息
+        /// </summary>
+        /// <param name="ID">用户ID</param>
+        /// <returns></returns>
+        public DataTable Userinfo(int ID)
+        {
+            string sResql = string.Empty;
+            DataTable dt = new DataTable();
+            sResql = string.Format("select * from im.user where UserID='{0}'", ID);
+            dt = DB.GetData(sResql);
+            return dt;
+        }
+        /// <summary>
+        /// 搜索信息（好友）
+        /// </summary>
+        /// <param name="sInfo">搜索条件（UserID，UserNickName，UserIMNum）</param>
+        /// <returns></returns>
+        public DataTable SearchUser(string sInfo)
+        {
+            DataTable dt = new DataTable();
+            string sReSql = string.Empty;
+            sReSql = string.Format("select * from im.user where UserID='{0}'", sInfo);
+            dt = DB.GetData(sReSql);
+            if (dt.Rows.Count==0)
+            {
+                sReSql = string.Format("select * from im.user where UserNickName='{0}'", sInfo);
+                dt = DB.GetData(sReSql);
+                if(dt.Rows.Count==0)
+                {
+                    sReSql = string.Format("select * from im.user where UserIMNum={0}", sInfo);
+                    dt = DB.GetData(sReSql);
+                }
+            }
+            return dt;
+        }
+
+        /// <summary>
+        /// 判断是否IMNum重复
+        /// </summary>
+        /// <param name="sId"></param>
+        /// <returns></returns>
+        public bool IsUserIMNumRepeat(string sId)
+        {
+            bool bSuccess = false;
+            string sReSql = string.Empty;
+            DataTable dt = new DataTable();
+            sReSql = string.Format("select * from im.user where im.UserIMNum={0}", sId);
+            dt = DB.GetData(sReSql);
+            if (dt.Rows.Count > 0)
+            {
+                return bSuccess;
+            }
+            else
+            {
+                bSuccess = true;
+            }
+            return bSuccess;
+        }
+        /// <summary>
+        /// 获取朋友的ID
+        /// </summary>
+        /// <param name="sName">朋友的昵称</param>
+        /// <returns></returns>
+        public  string GetFriendID(string sName)
+        {
+            string sReSql = string.Empty;
+            DataTable dt = new DataTable();
+            sReSql = string.Format("select * from im.user where UserNickName='{0}'",sName);
+            dt = DB.GetData(sReSql);
+            return dt.Rows[0]["UserID"].ToString();
+        }
+
+
+        public bool AddFriend(string MyID, string FriendID)
+        {
+            bool bSuccess = false;
+            string sReSql = string.Empty;
+            DataTable dt = new DataTable();
+            sReSql = string.Format("select * from im.friendrelationship where UserID='{0}' and Use_UserID='{1}'",MyID,FriendID);
+            dt = DB.GetData(sReSql);
+            if (dt.Rows.Count == 0)
+            {
+                DataRow dtr = dt.NewRow();
+                dtr["UserID"] = MyID;
+                dtr["Use_UserID"] = FriendID;
+                dtr["GrouID"] = 1;
+                dt.Rows.Add(dtr);
+                bSuccess=DB.Update( ref dt, sReSql);
+            }
+            return bSuccess;
+           
         }
         #endregion
 

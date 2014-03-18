@@ -67,6 +67,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.skinToolStrip2 = new CCWin.SkinControl.SkinToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.添加分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Usermenu.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Communicate_tabPage.SuspendLayout();
@@ -74,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.skinPanel1.SuspendLayout();
             this.skinToolStrip2.SuspendLayout();
+            this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // chatListBox
@@ -145,8 +150,9 @@
             this.chatListBox.Margin = new System.Windows.Forms.Padding(4);
             this.chatListBox.Name = "chatListBox";
             this.chatListBox.Size = new System.Drawing.Size(363, 556);
-            this.chatListBox.SubItemMenu = null;
+            this.chatListBox.SubItemMenu = this.contextMenu;
             this.chatListBox.TabIndex = 1;
+            this.chatListBox.DoubleClickSubItem += new CCWin.SkinControl.ChatListBox.ChatListEventHandler(this.chatListBox_DoubleClickSubItem);
             // 
             // Usermenu
             // 
@@ -531,6 +537,33 @@
             this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // contextMenu
+            // 
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加分组ToolStripMenuItem,
+            this.删除分组ToolStripMenuItem,
+            this.重命名ToolStripMenuItem});
+            this.contextMenu.Name = "contextMenu";
+            this.contextMenu.Size = new System.Drawing.Size(139, 76);
+            // 
+            // 添加分组ToolStripMenuItem
+            // 
+            this.添加分组ToolStripMenuItem.Name = "添加分组ToolStripMenuItem";
+            this.添加分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.添加分组ToolStripMenuItem.Text = "添加分组";
+            // 
+            // 删除分组ToolStripMenuItem
+            // 
+            this.删除分组ToolStripMenuItem.Name = "删除分组ToolStripMenuItem";
+            this.删除分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.删除分组ToolStripMenuItem.Text = "删除分组";
+            // 
+            // 重命名ToolStripMenuItem
+            // 
+            this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
+            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.重命名ToolStripMenuItem.Text = "重命名";
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -544,6 +577,7 @@
             this.Name = "main";
             this.Text = "main";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
+            this.Load += new System.EventHandler(this.main_Load);
             this.Usermenu.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.Communicate_tabPage.ResumeLayout(false);
@@ -555,6 +589,7 @@
             this.skinPanel1.PerformLayout();
             this.skinToolStrip2.ResumeLayout(false);
             this.skinToolStrip2.PerformLayout();
+            this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -593,6 +628,10 @@
         private System.Windows.Forms.ToolStripMenuItem 修改备注名ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 聊天记录ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查看资料ToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenu;
+        private System.Windows.Forms.ToolStripMenuItem 添加分组ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除分组ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重命名ToolStripMenuItem;
 
     }
 }

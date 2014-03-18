@@ -20,6 +20,7 @@ namespace IM
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string UserId = string.Empty;
             error_username .Text= "";
             error_password .Text= "";
             error_password2.Text = "";
@@ -38,10 +39,17 @@ namespace IM
             bSuccess = udb.AddUserInfo(udb.user.UserName, udb.user.PassWord1, udb.user.PassWord2, udb.user.Email, udb.user.PhoneNumber, udb.user.BirthDay, udb.user.Identity, udb.user.Sex, ref sMessage);
             if (bSuccess)
             {
+                //获取随机UserIMNum
+                do
+                {
+                    UserId = RanNum();
+                } while (!udb.IsUserIMNumRepeat(UserId));
+                udb.user.UserIMNum = UserId;
                 Close();
             }
             else
             {
+                //显示错误信息
                 if (string.IsNullOrEmpty(sMessage[2]))
                     error_password2.Text = sMessage[4];
                 else
@@ -55,7 +63,6 @@ namespace IM
                     error_username.Text = sMessage[5];
                 else
                     error_username.Text = sMessage[0];
-
             }
         }
 
@@ -72,6 +79,21 @@ namespace IM
         private void error_username_Click(object sender, EventArgs e)
         {
 
+        }
+        /// <summary>
+        /// 随机生成IMNum
+        /// </summary>
+        /// <returns></returns>
+        private string RanNum()
+        {
+            string UserId = string.Empty;
+            for (int i = 0; i < 6; i++)
+            {
+                Random rd = new Random();
+                int iSjNum = rd.Next(10);
+                UserId = UserId + iSjNum.ToString();
+            }
+            return UserId;
         }
     }
 }

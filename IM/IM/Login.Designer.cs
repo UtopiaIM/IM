@@ -37,7 +37,7 @@
             this.regist_link = new System.Windows.Forms.LinkLabel();
             this.findpassword_link = new System.Windows.Forms.LinkLabel();
             this.autologin = new System.Windows.Forms.CheckBox();
-            this.remainpw = new System.Windows.Forms.CheckBox();
+            this.remain_password = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.login_title = new System.Windows.Forms.PictureBox();
@@ -80,6 +80,7 @@
             this.Password_textbox.Name = "Password_textbox";
             this.Password_textbox.Size = new System.Drawing.Size(171, 25);
             this.Password_textbox.TabIndex = 4;
+            this.Password_textbox.UseSystemPasswordChar = true;
             // 
             // regist_link
             // 
@@ -112,16 +113,18 @@
             this.autologin.Text = "自动登录";
             this.autologin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.autologin.UseVisualStyleBackColor = true;
+            this.autologin.CheckedChanged += new System.EventHandler(this.autologin_CheckedChanged);
             // 
-            // remainpw
+            // remain_password
             // 
-            this.remainpw.AutoSize = true;
-            this.remainpw.Location = new System.Drawing.Point(57, 172);
-            this.remainpw.Name = "remainpw";
-            this.remainpw.Size = new System.Drawing.Size(89, 19);
-            this.remainpw.TabIndex = 8;
-            this.remainpw.Text = "记住密码";
-            this.remainpw.UseVisualStyleBackColor = true;
+            this.remain_password.AutoSize = true;
+            this.remain_password.Location = new System.Drawing.Point(57, 172);
+            this.remain_password.Name = "remain_password";
+            this.remain_password.Size = new System.Drawing.Size(89, 19);
+            this.remain_password.TabIndex = 8;
+            this.remain_password.Text = "记住密码";
+            this.remain_password.UseVisualStyleBackColor = true;
+            this.remain_password.CheckedChanged += new System.EventHandler(this.remain_password_CheckedChanged);
             // 
             // button1
             // 
@@ -148,6 +151,7 @@
             this.login_title.Size = new System.Drawing.Size(360, 85);
             this.login_title.TabIndex = 0;
             this.login_title.TabStop = false;
+            this.login_title.Click += new System.EventHandler(this.login_title_Click);
             // 
             // tuopan
             // 
@@ -205,7 +209,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(246)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(360, 263);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.remainpw);
+            this.Controls.Add(this.remain_password);
             this.Controls.Add(this.autologin);
             this.Controls.Add(this.findpassword_link);
             this.Controls.Add(this.regist_link);
@@ -237,7 +241,7 @@
         private System.Windows.Forms.LinkLabel regist_link;
         private System.Windows.Forms.LinkLabel findpassword_link;
         private System.Windows.Forms.CheckBox autologin;
-        private System.Windows.Forms.CheckBox remainpw;
+        private System.Windows.Forms.CheckBox remain_password;
         private System.Windows.Forms.Button button1;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
         public System.Windows.Forms.NotifyIcon tuopan;
