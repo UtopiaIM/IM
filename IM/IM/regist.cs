@@ -39,13 +39,9 @@ namespace IM
             bSuccess = udb.AddUserInfo(udb.user.UserName, udb.user.PassWord1, udb.user.PassWord2, udb.user.Email, udb.user.PhoneNumber, udb.user.BirthDay, udb.user.Identity, udb.user.Sex, ref sMessage);
             if (bSuccess)
             {
-                //获取随机UserIMNum
-                do
-                {
-                    UserId = RanNum();
-                } while (!udb.IsUserIMNumRepeat(UserId));
-                udb.user.UserIMNum = UserId;
+                MessageBox.Show("注册成功！");
                 Close();
+  
             }
             else
             {
@@ -80,20 +76,6 @@ namespace IM
         {
 
         }
-        /// <summary>
-        /// 随机生成IMNum
-        /// </summary>
-        /// <returns></returns>
-        private string RanNum()
-        {
-            string UserId = string.Empty;
-            for (int i = 0; i < 6; i++)
-            {
-                Random rd = new Random();
-                int iSjNum = rd.Next(10);
-                UserId = UserId + iSjNum.ToString();
-            }
-            return UserId;
-        }
+
     }
 }

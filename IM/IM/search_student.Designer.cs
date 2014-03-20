@@ -35,30 +35,30 @@
             this.search_textBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.search_textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.search_textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.add_button2 = new System.Windows.Forms.Button();
             this.introduction2 = new System.Windows.Forms.Label();
-            this.item_name2 = new System.Windows.Forms.Label();
             this.picture_head2 = new System.Windows.Forms.PictureBox();
-            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.item_name2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.add_button1 = new System.Windows.Forms.Button();
+            this.introduction1 = new System.Windows.Forms.Label();
             this.item_name1 = new System.Windows.Forms.Label();
             this.picture_head1 = new System.Windows.Forms.PictureBox();
-            this.introduction1 = new System.Windows.Forms.Label();
-            this.add_button1 = new System.Windows.Forms.Button();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.skinTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_head2)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_head1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,12 +69,13 @@
             this.skinTabControl1.Controls.Add(this.tabPage1);
             this.skinTabControl1.Controls.Add(this.tabPage2);
             this.skinTabControl1.Controls.Add(this.tabPage3);
+            this.skinTabControl1.HotTrack = true;
             this.skinTabControl1.ItemSize = new System.Drawing.Size(70, 36);
-            this.skinTabControl1.Location = new System.Drawing.Point(12, 12);
+            this.skinTabControl1.Location = new System.Drawing.Point(16, 12);
             this.skinTabControl1.Name = "skinTabControl1";
             this.skinTabControl1.PageColor = System.Drawing.Color.Transparent;
             this.skinTabControl1.SelectedIndex = 0;
-            this.skinTabControl1.Size = new System.Drawing.Size(580, 90);
+            this.skinTabControl1.Size = new System.Drawing.Size(572, 103);
             this.skinTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.skinTabControl1.TabIndex = 0;
             // 
@@ -86,7 +87,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(572, 46);
+            this.tabPage1.Size = new System.Drawing.Size(564, 59);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "搜索同学";
             // 
@@ -111,11 +112,11 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Transparent;
             this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.search_textBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(572, 46);
+            this.tabPage2.Size = new System.Drawing.Size(564, 59);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "搜索老师";
             // 
@@ -127,23 +128,24 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "搜索";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox3
+            // search_textBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 11);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(390, 25);
-            this.textBox3.TabIndex = 0;
+            this.search_textBox1.Location = new System.Drawing.Point(6, 11);
+            this.search_textBox1.Name = "search_textBox1";
+            this.search_textBox1.Size = new System.Drawing.Size(390, 25);
+            this.search_textBox1.TabIndex = 0;
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.search_textBox2);
             this.tabPage3.Location = new System.Drawing.Point(4, 40);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(572, 46);
+            this.tabPage3.Size = new System.Drawing.Size(564, 59);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "搜索教室";
             // 
@@ -156,19 +158,19 @@
             this.button1.Text = "搜索";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // search_textBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(390, 25);
-            this.textBox1.TabIndex = 0;
+            this.search_textBox2.Location = new System.Drawing.Point(6, 11);
+            this.search_textBox2.Name = "search_textBox2";
+            this.search_textBox2.Size = new System.Drawing.Size(390, 25);
+            this.search_textBox2.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(16, 108);
+            this.panel1.Location = new System.Drawing.Point(16, 128);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(572, 270);
             this.panel1.TabIndex = 1;
@@ -184,18 +186,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(545, 108);
             this.panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.add_button1);
-            this.panel2.Controls.Add(this.introduction1);
-            this.panel2.Controls.Add(this.item_name1);
-            this.panel2.Controls.Add(this.picture_head1);
-            this.panel2.Location = new System.Drawing.Point(6, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(545, 108);
-            this.panel2.TabIndex = 0;
             // 
             // add_button2
             // 
@@ -217,6 +207,15 @@
             this.introduction2.TabIndex = 2;
             this.introduction2.Text = "教室介绍：。。。。。。";
             // 
+            // picture_head2
+            // 
+            this.picture_head2.Image = global::IM.Properties.Resources.search_teacher;
+            this.picture_head2.Location = new System.Drawing.Point(3, 4);
+            this.picture_head2.Name = "picture_head2";
+            this.picture_head2.Size = new System.Drawing.Size(100, 100);
+            this.picture_head2.TabIndex = 0;
+            this.picture_head2.TabStop = false;
+            // 
             // item_name2
             // 
             this.item_name2.AutoSize = true;
@@ -227,20 +226,37 @@
             this.item_name2.TabIndex = 1;
             this.item_name2.Text = "XXX教室";
             // 
-            // picture_head2
+            // panel2
             // 
-            this.picture_head2.Image = global::IM.Properties.Resources.search_teacher;
-            this.picture_head2.Location = new System.Drawing.Point(3, 4);
-            this.picture_head2.Name = "picture_head2";
-            this.picture_head2.Size = new System.Drawing.Size(100, 100);
-            this.picture_head2.TabIndex = 0;
-            this.picture_head2.TabStop = false;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.add_button1);
+            this.panel2.Controls.Add(this.introduction1);
+            this.panel2.Controls.Add(this.item_name1);
+            this.panel2.Controls.Add(this.picture_head1);
+            this.panel2.Location = new System.Drawing.Point(6, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(545, 108);
+            this.panel2.TabIndex = 0;
             // 
-            // skinEngine1
+            // add_button1
             // 
-            this.skinEngine1.SerialNumber = "";
-            this.skinEngine1.SkinFile = "D:\\IM\\IM\\IM\\bin\\Debug\\MP10.ssk";
-            this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
+            this.add_button1.Location = new System.Drawing.Point(426, 38);
+            this.add_button1.Name = "add_button1";
+            this.add_button1.Size = new System.Drawing.Size(75, 23);
+            this.add_button1.TabIndex = 3;
+            this.add_button1.Text = "添加";
+            this.add_button1.UseVisualStyleBackColor = true;
+            this.add_button1.Click += new System.EventHandler(this.add_button1_Click);
+            // 
+            // introduction1
+            // 
+            this.introduction1.AutoSize = true;
+            this.introduction1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.introduction1.Location = new System.Drawing.Point(125, 42);
+            this.introduction1.Name = "introduction1";
+            this.introduction1.Size = new System.Drawing.Size(172, 15);
+            this.introduction1.TabIndex = 2;
+            this.introduction1.Text = "教室介绍：。。。。。。";
             // 
             // item_name1
             // 
@@ -261,25 +277,11 @@
             this.picture_head1.TabIndex = 0;
             this.picture_head1.TabStop = false;
             // 
-            // introduction1
+            // skinEngine1
             // 
-            this.introduction1.AutoSize = true;
-            this.introduction1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.introduction1.Location = new System.Drawing.Point(125, 42);
-            this.introduction1.Name = "introduction1";
-            this.introduction1.Size = new System.Drawing.Size(172, 15);
-            this.introduction1.TabIndex = 2;
-            this.introduction1.Text = "教室介绍：。。。。。。";
-            // 
-            // add_button1
-            // 
-            this.add_button1.Location = new System.Drawing.Point(426, 38);
-            this.add_button1.Name = "add_button1";
-            this.add_button1.Size = new System.Drawing.Size(75, 23);
-            this.add_button1.TabIndex = 3;
-            this.add_button1.Text = "添加";
-            this.add_button1.UseVisualStyleBackColor = true;
-            this.add_button1.Click += new System.EventHandler(this.add_button1_Click);
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = "D:\\IM\\IM\\IM\\bin\\Debug\\MP10.ssk";
+            this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
             // 
             // search_student
             // 
@@ -303,9 +305,9 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_head2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_head2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_head1)).EndInit();
             this.ResumeLayout(false);
 
@@ -317,12 +319,12 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox search_textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button search_button;
         private System.Windows.Forms.TextBox search_textBox;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox search_textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

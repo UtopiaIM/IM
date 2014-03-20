@@ -40,7 +40,7 @@ namespace IM.BLL
             DB = IDBAccess.DBAccessFactory.CreateDBAccess();
 
             _DBConn = new MySqlConnection();
-            _DBConn.ConnectionString = "server=127.0.0.1;User Id=root;Password=123456;database=IM";
+            _DBConn.ConnectionString = "server=127.0.0.1;User Id=root;Password=123456;database=IM_new";
             _DBConn.Open();
             this.DBConn = _DBConn;
         }

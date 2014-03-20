@@ -67,5 +67,10 @@ namespace IM.Model
             set;
         }
 
+        public string UserPersonalMessage
+        {
+            get;
+            set;
+        }
     }
 }

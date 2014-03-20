@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2014/3/17 17:25:54                           */
+/* Created on:     2014/3/19 9:49:17                            */
 /*==============================================================*/
 
 
@@ -137,6 +137,7 @@ create table User
    UserNickName         varchar(20) not null,
    UserPersonalMessage  varchar(200),
    UserIMNum            int not null,
+   HeadPicture          varchar(30),
    primary key (UserID)
 );
 

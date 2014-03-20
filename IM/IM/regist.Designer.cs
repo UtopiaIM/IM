@@ -275,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IM.Properties.Resources.regist_背景_;
+            this.BackgroundImage = global::IM.Properties.Resources.teachermanager_背景;
             this.ClientSize = new System.Drawing.Size(639, 420);
             this.Controls.Add(this.error_identity);
             this.Controls.Add(this.error_password2);

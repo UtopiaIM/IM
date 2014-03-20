@@ -29,14 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            CCWin.SkinControl.ChatListItem chatListItem1 = new CCWin.SkinControl.ChatListItem();
-            CCWin.SkinControl.ChatListSubItem chatListSubItem1 = new CCWin.SkinControl.ChatListSubItem();
-            CCWin.SkinControl.ChatListItem chatListItem2 = new CCWin.SkinControl.ChatListItem();
-            CCWin.SkinControl.ChatListItem chatListItem3 = new CCWin.SkinControl.ChatListItem();
-            CCWin.SkinControl.ChatListItem chatListItem4 = new CCWin.SkinControl.ChatListItem();
-            CCWin.SkinControl.ChatListSubItem chatListSubItem2 = new CCWin.SkinControl.ChatListSubItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            this.chatListBox = new CCWin.SkinControl.ChatListBox();
+            this.chatListBox1 = new CCWin.SkinControl.ChatListBox();
             this.Usermenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.发送即时消息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.移动联系人至ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +38,10 @@
             this.修改备注名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.聊天记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看资料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.添加分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Communicate_tabPage = new System.Windows.Forms.TabPage();
             this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
@@ -62,97 +60,34 @@
             this.Class_tabPage = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
+            this.PersonalMessage = new CCWin.SkinControl.SkinLabel();
             this.Name_skinLable = new CCWin.SkinControl.SkinLabel();
-            this.Sign_skinLabel = new CCWin.SkinControl.SkinLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.skinToolStrip2 = new CCWin.SkinControl.SkinToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.添加分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Usermenu.SuspendLayout();
+            this.contextMenu.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Communicate_tabPage.SuspendLayout();
             this.skinToolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.skinPanel1.SuspendLayout();
             this.skinToolStrip2.SuspendLayout();
-            this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // chatListBox
+            // chatListBox1
             // 
-            this.chatListBox.BackColor = System.Drawing.Color.White;
-            this.chatListBox.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chatListBox.ForeColor = System.Drawing.Color.Black;
-            chatListItem1.Bounds = new System.Drawing.Rectangle(0, 1, 363, 25);
-            chatListItem1.IsTwinkleHide = false;
-            chatListItem1.OwnerChatListBox = this.chatListBox;
-            chatListSubItem1.Bounds = new System.Drawing.Rectangle(0, 0, 0, 0);
-            chatListSubItem1.DisplayName = "好友1号";
-            chatListSubItem1.HeadImage = null;
-            chatListSubItem1.HeadRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            chatListSubItem1.ID = 0;
-            chatListSubItem1.IpAddress = null;
-            chatListSubItem1.IsTwinkle = false;
-            chatListSubItem1.IsTwinkleHide = false;
-            chatListSubItem1.NicName = "nicName";
-            chatListSubItem1.OwnerListItem = chatListItem1;
-            chatListSubItem1.PersonalMsg = "Personal Message ...";
-            chatListSubItem1.Status = CCWin.SkinControl.ChatListSubItem.UserStatus.Online;
-            chatListSubItem1.Tag = null;
-            chatListSubItem1.TcpPort = 0;
-            chatListSubItem1.UpdPort = 0;
-            chatListItem1.SubItems.AddRange(new CCWin.SkinControl.ChatListSubItem[] {
-            chatListSubItem1});
-            chatListItem1.Text = "我的好友";
-            chatListItem1.TwinkleSubItemNumber = 0;
-            chatListItem2.Bounds = new System.Drawing.Rectangle(0, 27, 363, 25);
-            chatListItem2.IsTwinkleHide = false;
-            chatListItem2.OwnerChatListBox = this.chatListBox;
-            chatListItem2.Text = "我的老师";
-            chatListItem2.TwinkleSubItemNumber = 0;
-            chatListItem3.Bounds = new System.Drawing.Rectangle(0, 53, 363, 25);
-            chatListItem3.IsTwinkleHide = false;
-            chatListItem3.OwnerChatListBox = this.chatListBox;
-            chatListItem3.Text = "陌生人";
-            chatListItem3.TwinkleSubItemNumber = 0;
-            chatListItem4.Bounds = new System.Drawing.Rectangle(0, 79, 363, 25);
-            chatListItem4.IsTwinkleHide = false;
-            chatListItem4.OwnerChatListBox = this.chatListBox;
-            chatListSubItem2.Bounds = new System.Drawing.Rectangle(0, 0, 0, 0);
-            chatListSubItem2.DisplayName = "黑名单1号";
-            chatListSubItem2.HeadImage = null;
-            chatListSubItem2.HeadRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            chatListSubItem2.ID = 0;
-            chatListSubItem2.IpAddress = null;
-            chatListSubItem2.IsTwinkle = false;
-            chatListSubItem2.IsTwinkleHide = false;
-            chatListSubItem2.NicName = "nicName";
-            chatListSubItem2.OwnerListItem = chatListItem4;
-            chatListSubItem2.PersonalMsg = "Personal Message ...";
-            chatListSubItem2.Status = CCWin.SkinControl.ChatListSubItem.UserStatus.Online;
-            chatListSubItem2.Tag = null;
-            chatListSubItem2.TcpPort = 0;
-            chatListSubItem2.UpdPort = 0;
-            chatListItem4.SubItems.AddRange(new CCWin.SkinControl.ChatListSubItem[] {
-            chatListSubItem2});
-            chatListItem4.Text = "黑名单";
-            chatListItem4.TwinkleSubItemNumber = 0;
-            this.chatListBox.Items.AddRange(new CCWin.SkinControl.ChatListItem[] {
-            chatListItem1,
-            chatListItem2,
-            chatListItem3,
-            chatListItem4});
-            this.chatListBox.ListSubItemMenu = this.Usermenu;
-            this.chatListBox.Location = new System.Drawing.Point(3, 33);
-            this.chatListBox.Margin = new System.Windows.Forms.Padding(4);
-            this.chatListBox.Name = "chatListBox";
-            this.chatListBox.Size = new System.Drawing.Size(363, 556);
-            this.chatListBox.SubItemMenu = this.contextMenu;
-            this.chatListBox.TabIndex = 1;
-            this.chatListBox.DoubleClickSubItem += new CCWin.SkinControl.ChatListBox.ChatListEventHandler(this.chatListBox_DoubleClickSubItem);
+            this.chatListBox1.BackColor = System.Drawing.Color.White;
+            this.chatListBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.chatListBox1.ForeColor = System.Drawing.Color.Black;
+            this.chatListBox1.ListSubItemMenu = this.Usermenu;
+            this.chatListBox1.Location = new System.Drawing.Point(3, 33);
+            this.chatListBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.chatListBox1.Name = "chatListBox1";
+            this.chatListBox1.Size = new System.Drawing.Size(363, 556);
+            this.chatListBox1.SubItemMenu = this.contextMenu;
+            this.chatListBox1.TabIndex = 1;
+            this.chatListBox1.DoubleClickSubItem += new CCWin.SkinControl.ChatListBox.ChatListEventHandler(this.chatListBox_DoubleClickSubItem);
             // 
             // Usermenu
             // 
@@ -164,7 +99,8 @@
             this.聊天记录ToolStripMenuItem,
             this.查看资料ToolStripMenuItem});
             this.Usermenu.Name = "Usermenu";
-            this.Usermenu.Size = new System.Drawing.Size(169, 148);
+            this.Usermenu.Size = new System.Drawing.Size(169, 170);
+            this.Usermenu.Opening += new System.ComponentModel.CancelEventHandler(this.Usermenu_Opening);
             // 
             // 发送即时消息ToolStripMenuItem
             // 
@@ -178,6 +114,7 @@
             this.移动联系人至ToolStripMenuItem.Name = "移动联系人至ToolStripMenuItem";
             this.移动联系人至ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.移动联系人至ToolStripMenuItem.Text = "移动联系人至";
+            this.移动联系人至ToolStripMenuItem.MouseEnter += new System.EventHandler(this.移动联系人至ToolStripMenuItem_MouseEnter);
             // 
             // 删除此好友ToolStripMenuItem
             // 
@@ -190,6 +127,8 @@
             this.修改备注名ToolStripMenuItem.Name = "修改备注名ToolStripMenuItem";
             this.修改备注名ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.修改备注名ToolStripMenuItem.Text = "修改备注名";
+            this.修改备注名ToolStripMenuItem.Click += new System.EventHandler(this.修改备注名ToolStripMenuItem_Click);
+            this.修改备注名ToolStripMenuItem.MouseEnter += new System.EventHandler(this.修改备注名ToolStripMenuItem_MouseEnter);
             // 
             // 聊天记录ToolStripMenuItem
             // 
@@ -202,6 +141,33 @@
             this.查看资料ToolStripMenuItem.Name = "查看资料ToolStripMenuItem";
             this.查看资料ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.查看资料ToolStripMenuItem.Text = "查看资料";
+            // 
+            // contextMenu
+            // 
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加分组ToolStripMenuItem,
+            this.删除分组ToolStripMenuItem,
+            this.重命名ToolStripMenuItem});
+            this.contextMenu.Name = "contextMenu";
+            this.contextMenu.Size = new System.Drawing.Size(139, 76);
+            // 
+            // 添加分组ToolStripMenuItem
+            // 
+            this.添加分组ToolStripMenuItem.Name = "添加分组ToolStripMenuItem";
+            this.添加分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.添加分组ToolStripMenuItem.Text = "添加分组";
+            // 
+            // 删除分组ToolStripMenuItem
+            // 
+            this.删除分组ToolStripMenuItem.Name = "删除分组ToolStripMenuItem";
+            this.删除分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.删除分组ToolStripMenuItem.Text = "删除分组";
+            // 
+            // 重命名ToolStripMenuItem
+            // 
+            this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
+            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.重命名ToolStripMenuItem.Text = "重命名";
             // 
             // tabControl1
             // 
@@ -226,7 +192,7 @@
             // 
             // Communicate_tabPage
             // 
-            this.Communicate_tabPage.Controls.Add(this.chatListBox);
+            this.Communicate_tabPage.Controls.Add(this.chatListBox1);
             this.Communicate_tabPage.Controls.Add(this.skinToolStrip1);
             this.Communicate_tabPage.Location = new System.Drawing.Point(26, 4);
             this.Communicate_tabPage.Margin = new System.Windows.Forms.Padding(4);
@@ -428,9 +394,9 @@
             // 
             this.skinPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(206)))), ((int)(((byte)(255)))));
             this.skinPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.skinPanel1.Controls.Add(this.PersonalMessage);
             this.skinPanel1.Controls.Add(this.pictureBox1);
             this.skinPanel1.Controls.Add(this.Name_skinLable);
-            this.skinPanel1.Controls.Add(this.Sign_skinLabel);
             this.skinPanel1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinPanel1.DownBack = null;
             this.skinPanel1.Location = new System.Drawing.Point(-2, 0);
@@ -440,6 +406,19 @@
             this.skinPanel1.NormlBack = null;
             this.skinPanel1.Size = new System.Drawing.Size(392, 198);
             this.skinPanel1.TabIndex = 4;
+            // 
+            // PersonalMessage
+            // 
+            this.PersonalMessage.ArtTextStyle = CCWin.SkinControl.ArtTextStyle.None;
+            this.PersonalMessage.BackColor = System.Drawing.Color.Transparent;
+            this.PersonalMessage.BorderColor = System.Drawing.Color.Transparent;
+            this.PersonalMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PersonalMessage.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.PersonalMessage.Location = new System.Drawing.Point(151, 97);
+            this.PersonalMessage.Name = "PersonalMessage";
+            this.PersonalMessage.Size = new System.Drawing.Size(209, 79);
+            this.PersonalMessage.TabIndex = 3;
+            this.PersonalMessage.Text = "skinLabel1";
             // 
             // Name_skinLable
             // 
@@ -453,19 +432,6 @@
             this.Name_skinLable.Size = new System.Drawing.Size(155, 39);
             this.Name_skinLable.TabIndex = 0;
             this.Name_skinLable.Text = "威廉 乔 汀";
-            // 
-            // Sign_skinLabel
-            // 
-            this.Sign_skinLabel.AutoSize = true;
-            this.Sign_skinLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Sign_skinLabel.BorderColor = System.Drawing.Color.White;
-            this.Sign_skinLabel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Sign_skinLabel.Location = new System.Drawing.Point(156, 104);
-            this.Sign_skinLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Sign_skinLabel.Name = "Sign_skinLabel";
-            this.Sign_skinLabel.Size = new System.Drawing.Size(174, 20);
-            this.Sign_skinLabel.TabIndex = 1;
-            this.Sign_skinLabel.Text = "主人还没有任何新鲜事。";
             // 
             // button1
             // 
@@ -537,33 +503,6 @@
             this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // contextMenu
-            // 
-            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.添加分组ToolStripMenuItem,
-            this.删除分组ToolStripMenuItem,
-            this.重命名ToolStripMenuItem});
-            this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(139, 76);
-            // 
-            // 添加分组ToolStripMenuItem
-            // 
-            this.添加分组ToolStripMenuItem.Name = "添加分组ToolStripMenuItem";
-            this.添加分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
-            this.添加分组ToolStripMenuItem.Text = "添加分组";
-            // 
-            // 删除分组ToolStripMenuItem
-            // 
-            this.删除分组ToolStripMenuItem.Name = "删除分组ToolStripMenuItem";
-            this.删除分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
-            this.删除分组ToolStripMenuItem.Text = "删除分组";
-            // 
-            // 重命名ToolStripMenuItem
-            // 
-            this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
-            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
-            this.重命名ToolStripMenuItem.Text = "重命名";
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -579,6 +518,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
             this.Load += new System.EventHandler(this.main_Load);
             this.Usermenu.ResumeLayout(false);
+            this.contextMenu.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.Communicate_tabPage.ResumeLayout(false);
             this.Communicate_tabPage.PerformLayout();
@@ -589,7 +529,6 @@
             this.skinPanel1.PerformLayout();
             this.skinToolStrip2.ResumeLayout(false);
             this.skinToolStrip2.PerformLayout();
-            this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -597,7 +536,7 @@
 
         #endregion
 
-        private CCWin.SkinControl.ChatListBox chatListBox;
+        private CCWin.SkinControl.ChatListBox chatListBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Communicate_tabPage;
         private CCWin.SkinControl.SkinToolStrip skinToolStrip1;
@@ -617,7 +556,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private CCWin.SkinControl.SkinPanel skinPanel1;
         private CCWin.SkinControl.SkinLabel Name_skinLable;
-        private CCWin.SkinControl.SkinLabel Sign_skinLabel;
         private System.Windows.Forms.Button button1;
         private CCWin.SkinControl.SkinToolStrip skinToolStrip2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
@@ -632,6 +570,7 @@
         private System.Windows.Forms.ToolStripMenuItem 添加分组ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除分组ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重命名ToolStripMenuItem;
+        private CCWin.SkinControl.SkinLabel PersonalMessage;
 
     }
 }

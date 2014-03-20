@@ -133,9 +133,6 @@
   <data name="teachermanager_头像" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teachermanager_头像.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="regist_背景 " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\regist_背景 .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="title_createclass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\title_createclass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
