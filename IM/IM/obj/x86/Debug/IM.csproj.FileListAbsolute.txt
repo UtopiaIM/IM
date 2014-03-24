@@ -17,7 +17,11 @@ D:\IM\IM\IM\obj\x86\Debug\IM.recievefile.resources
 E:\MyWorkSpace\IM\trunk\IM\IM\bin\Debug\IM.exe.config
 E:\MyWorkSpace\IM\trunk\IM\IM\obj\x86\Debug\IM.exe
 E:\MyWorkSpace\IM\trunk\IM\IM\obj\x86\Debug\IM.pdb
-D:\IM\IM\IM\obj\x86\Debug\IM.frmChat.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.frmClassroom.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.main.resources
 D:\IM\IM\IM\obj\x86\Debug\IM.csprojResolveAssemblyReference.cache
+D:\IM\IM\IM\obj\x86\Debug\IM.ChangeAlternateName.resources
+D:\IM\IM\IM\obj\x86\Debug\IM.AddGroup.resources
+D:\IM\IM\IM\obj\x86\Debug\IM.DeleteGroup.resources
+D:\IM\IM\IM\obj\x86\Debug\IM.ReNameGroup.resources
+D:\IM\IM\IM\obj\x86\Debug\IM.frmChat1.resources

@@ -81,7 +81,7 @@ namespace IM
                 Password_textbox.Text = str[1];
                 remain_password.Checked = true;
                 autologin.Checked = true;
-                login_();        
+                login_();
             }
         }
 
@@ -97,8 +97,33 @@ namespace IM
         private void button1_Click(object sender, EventArgs e)
         {
             login_();
+            StreamReader re1 = new StreamReader(s + "//info.txt");
+            string reName = re1.ReadLine();
+            re1.Close();
+            if ( reName!= Username_textbox.Text)
+            {
+                string[] sArray = { "", "", "", "" };
+                if (remain_password.Checked == true)
+                {
+                    StreamWriter wr = new StreamWriter(s + "//info.txt");
+                    wr.WriteLine(Username_textbox.Text);
+                    wr.WriteLine(Password_textbox.Text);
+                    wr.WriteLine("1");
+                    wr.Close();
+                }
+                else
+                {
+                    StreamReader re = new StreamReader(s + "//info.txt");
+                    sArray[0] = re.ReadLine();
+                    sArray[1] = re.ReadLine();
+                    sArray[2] = re.ReadLine();
+                    sArray[2] = sArray[2].Replace("1", "0");
+                    re.Close();
+                    File.WriteAllLines(s + "//info.txt", sArray);
+                }
+            }
         }
-        main ma;
+        IM.main ma = new main();
 
         private void 打开ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -161,7 +186,6 @@ namespace IM
                 sArray[2] = sArray[2].Replace("1", "0");
                 re.Close();
                 File.WriteAllLines(s + "//info.txt", sArray);
-
             }
         }
 

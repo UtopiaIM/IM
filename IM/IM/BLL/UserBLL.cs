@@ -291,11 +291,138 @@ namespace IM.BLL
             return dt;
         }
 
-
-        public bool ChangeAlternateName()
+        /// <summary>
+        /// 修改备注名
+        /// </summary>
+        /// <param name="sID"></param>
+        /// <param name="NewName"></param>
+        /// <returns></returns>
+        public bool ChangeAlternateName( string sID,string NewName)
         {
             bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from friendrelationship where userid='{0}' and use_userid='{1}'", user.UserID,sID);
+            dt = DB.GetData(sSql);
+            dt.Rows[0]["AlternateName"] = NewName;
+            bSuccess=DB.Update(ref dt, sSql);
             return bSuccess;
+        }
+        /// <summary>
+        /// 修改好友分组
+        /// </summary>
+        /// <param name="sGroupID"></param>
+        /// <param name="sUserID"></param>
+        /// <returns></returns>
+        public bool ChangeGroup(string sGroupID,string sUserID)
+        {
+            bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from friendrelationship where Use_UserID={0}",sUserID);
+            dt = DB.GetData(sSql);
+            dt.Rows[0]["GrouID"] = sGroupID;
+            bSuccess = DB.Update(ref dt, sSql);
+            return bSuccess;
+        }
+        /// <summary>
+        /// 删除好友
+        /// </summary>
+        /// <param name="sUserID"></param>
+        /// <returns></returns>
+        public bool DeleteFriend(string sUserID)
+        {
+            bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from friendrelationship where Use_UserID={0}", sUserID);
+            dt = DB.GetData(sSql);
+            dt.Rows[0].Delete();
+            bSuccess = DB.Update(ref dt, sSql);
+            return bSuccess;
+        }
+        /// <summary>
+        /// 增加分组
+        /// </summary>
+        /// <param name="sUserID"></param>
+        /// <param name="sGroupName"></param>
+        /// <returns></returns>
+        public bool AddGroup(string sUserID,string sGroupName)
+        {
+            bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from friendgroup where UserID={0}", sUserID);
+            dt = DB.GetData(sSql);
+            DataRow dtr = dt.NewRow();
+            dtr["UserID"]=sUserID;
+            dtr["GrouName"] = sGroupName;
+            dt.Rows.Add(dtr);
+            bSuccess = DB.Update(ref dt, sSql);
+
+            return bSuccess;
+         }
+        /// <summary>
+        /// 删除分组
+        /// </summary>
+        /// <param name="sName"></param>
+        /// <param name="sUserID"></param>
+        /// <returns></returns>
+        public bool DeletedGroup(string sName,string sUserID)
+        {
+            bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from FriendGroup where GrouName='{0}' and UserID={1}", sName,sUserID);
+            dt = DB.GetData(sSql);
+            dt.Rows[0].Delete();
+            bSuccess = DB.Update(ref dt, sSql);
+            return bSuccess;
+        }
+        /// <summary>
+        /// 修改分组名称
+        /// </summary>
+        /// <param name="sName"></param>
+        /// <param name="sUserID"></param>
+        /// <param name="sNewName"></param>
+        /// <returns></returns>
+        public bool ReNameGroup(string sName, string sUserID,string sNewName)
+        {
+            bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from FriendGroup where GrouName='{0}' and UserID={1}", sName, sUserID);
+            dt = DB.GetData(sSql);
+            dt.Rows[0]["GrouName"] = sNewName;
+            bSuccess = DB.Update(ref dt, sSql);
+            return bSuccess;
+         }
+        /// <summary>
+        /// 更换头像
+        /// </summary>
+        /// <param name="sDZ"></param>
+        /// <param name="sUserID"></param>
+        /// <returns></returns>
+        public bool ChangeHeadPicture(string sDZ,string sUserID)
+        {
+            bool bSuccess = false;
+            DataTable dt = new DataTable();
+            string sSql = string.Empty;
+            sSql = string.Format("select * from user where UserID={0}", sUserID);
+            dt = DB.GetData(sSql);
+            dt.Rows[0]["HeadPicture"] = sDZ;
+            bSuccess = DB.Update(ref dt, sSql);
+            return bSuccess;
+        }
+
+
+        public DataTable GetFriendShipInfo(string sUserID,string sUse_UserID)
+        {
+            DataTable dt = new DataTable();
+            string sReSql = string.Empty;
+            sReSql = string.Format("select * from friendrelationship where UserID={0} and Use_UserID={1}", sUserID, sUse_UserID); 
+            dt = DB.GetData(sReSql);
+            return dt;
         }
         #endregion
 

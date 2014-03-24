@@ -57,13 +57,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroup.Designer.cs">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="BLL\BaseDB.cs" />
     <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="ChangeAlternateName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeAlternateName.Designer.cs">
+      <DependentUpon>ChangeAlternateName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Createclass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Createclass.Designer.cs">
       <DependentUpon>Createclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteGroup.Designer.cs">
+      <DependentUpon>DeleteGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmChat.cs">
       <SubType>Form</SubType>
@@ -104,6 +122,12 @@
     <Compile Include="regist.Designer.cs">
       <DependentUpon>regist.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReNameGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReNameGroup.Designer.cs">
+      <DependentUpon>ReNameGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="search_student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,8 +152,17 @@
     <Compile Include="teachermanager.Designer.cs">
       <DependentUpon>teachermanager.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddGroup.resx">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeAlternateName.resx">
+      <DependentUpon>ChangeAlternateName.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Createclass.resx">
       <DependentUpon>Createclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteGroup.resx">
+      <DependentUpon>DeleteGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChat.resx">
       <DependentUpon>frmChat.cs</DependentUpon>
@@ -158,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="regist.resx">
       <DependentUpon>regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReNameGroup.resx">
+      <DependentUpon>ReNameGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="search_student.resx">
       <DependentUpon>search_student.cs</DependentUpon>

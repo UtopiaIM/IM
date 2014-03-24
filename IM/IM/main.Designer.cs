@@ -38,6 +38,7 @@
             this.修改备注名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.聊天记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看资料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.刷新好友列表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.添加分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除分组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,20 +59,21 @@
             this.Vedio_tabPage = new System.Windows.Forms.TabPage();
             this.Entertain_tabPage = new System.Windows.Forms.TabPage();
             this.Class_tabPage = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.PersonalMessage = new CCWin.SkinControl.SkinLabel();
+            this.headpicture = new System.Windows.Forms.PictureBox();
             this.Name_skinLable = new CCWin.SkinControl.SkinLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.skinToolStrip2 = new CCWin.SkinControl.SkinToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Usermenu.SuspendLayout();
             this.contextMenu.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Communicate_tabPage.SuspendLayout();
             this.skinToolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.skinPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.headpicture)).BeginInit();
             this.skinToolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,10 +99,10 @@
             this.删除此好友ToolStripMenuItem,
             this.修改备注名ToolStripMenuItem,
             this.聊天记录ToolStripMenuItem,
-            this.查看资料ToolStripMenuItem});
+            this.查看资料ToolStripMenuItem,
+            this.刷新好友列表ToolStripMenuItem});
             this.Usermenu.Name = "Usermenu";
-            this.Usermenu.Size = new System.Drawing.Size(169, 170);
-            this.Usermenu.Opening += new System.ComponentModel.CancelEventHandler(this.Usermenu_Opening);
+            this.Usermenu.Size = new System.Drawing.Size(169, 172);
             // 
             // 发送即时消息ToolStripMenuItem
             // 
@@ -114,6 +116,7 @@
             this.移动联系人至ToolStripMenuItem.Name = "移动联系人至ToolStripMenuItem";
             this.移动联系人至ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.移动联系人至ToolStripMenuItem.Text = "移动联系人至";
+            this.移动联系人至ToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.移动联系人至ToolStripMenuItem_DropDownItemClicked);
             this.移动联系人至ToolStripMenuItem.MouseEnter += new System.EventHandler(this.移动联系人至ToolStripMenuItem_MouseEnter);
             // 
             // 删除此好友ToolStripMenuItem
@@ -121,6 +124,7 @@
             this.删除此好友ToolStripMenuItem.Name = "删除此好友ToolStripMenuItem";
             this.删除此好友ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.删除此好友ToolStripMenuItem.Text = "删除此好友";
+            this.删除此好友ToolStripMenuItem.Click += new System.EventHandler(this.删除此好友ToolStripMenuItem_Click);
             // 
             // 修改备注名ToolStripMenuItem
             // 
@@ -128,7 +132,6 @@
             this.修改备注名ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.修改备注名ToolStripMenuItem.Text = "修改备注名";
             this.修改备注名ToolStripMenuItem.Click += new System.EventHandler(this.修改备注名ToolStripMenuItem_Click);
-            this.修改备注名ToolStripMenuItem.MouseEnter += new System.EventHandler(this.修改备注名ToolStripMenuItem_MouseEnter);
             // 
             // 聊天记录ToolStripMenuItem
             // 
@@ -141,6 +144,13 @@
             this.查看资料ToolStripMenuItem.Name = "查看资料ToolStripMenuItem";
             this.查看资料ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.查看资料ToolStripMenuItem.Text = "查看资料";
+            // 
+            // 刷新好友列表ToolStripMenuItem
+            // 
+            this.刷新好友列表ToolStripMenuItem.Name = "刷新好友列表ToolStripMenuItem";
+            this.刷新好友列表ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.刷新好友列表ToolStripMenuItem.Text = "刷新好友列表";
+            this.刷新好友列表ToolStripMenuItem.Click += new System.EventHandler(this.main_Load);
             // 
             // contextMenu
             // 
@@ -156,18 +166,21 @@
             this.添加分组ToolStripMenuItem.Name = "添加分组ToolStripMenuItem";
             this.添加分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.添加分组ToolStripMenuItem.Text = "添加分组";
+            this.添加分组ToolStripMenuItem.Click += new System.EventHandler(this.添加分组ToolStripMenuItem_Click);
             // 
             // 删除分组ToolStripMenuItem
             // 
             this.删除分组ToolStripMenuItem.Name = "删除分组ToolStripMenuItem";
             this.删除分组ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.删除分组ToolStripMenuItem.Text = "删除分组";
+            this.删除分组ToolStripMenuItem.Click += new System.EventHandler(this.删除分组ToolStripMenuItem_Click);
             // 
             // 重命名ToolStripMenuItem
             // 
             this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
             this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.重命名ToolStripMenuItem.Text = "重命名";
+            this.重命名ToolStripMenuItem.Click += new System.EventHandler(this.重命名ToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -379,23 +392,12 @@
             this.Class_tabPage.Text = "课堂";
             this.Class_tabPage.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::IM.Properties.Resources.search_teacher;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // skinPanel1
             // 
             this.skinPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(206)))), ((int)(((byte)(255)))));
             this.skinPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.skinPanel1.Controls.Add(this.PersonalMessage);
-            this.skinPanel1.Controls.Add(this.pictureBox1);
+            this.skinPanel1.Controls.Add(this.headpicture);
             this.skinPanel1.Controls.Add(this.Name_skinLable);
             this.skinPanel1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinPanel1.DownBack = null;
@@ -419,6 +421,18 @@
             this.PersonalMessage.Size = new System.Drawing.Size(209, 79);
             this.PersonalMessage.TabIndex = 3;
             this.PersonalMessage.Text = "skinLabel1";
+            // 
+            // headpicture
+            // 
+            this.headpicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.headpicture.Image = global::IM.Properties.Resources.search_teacher;
+            this.headpicture.Location = new System.Drawing.Point(33, 42);
+            this.headpicture.Margin = new System.Windows.Forms.Padding(4);
+            this.headpicture.Name = "headpicture";
+            this.headpicture.Size = new System.Drawing.Size(100, 100);
+            this.headpicture.TabIndex = 2;
+            this.headpicture.TabStop = false;
+            this.headpicture.Click += new System.EventHandler(this.headpicture_Click);
             // 
             // Name_skinLable
             // 
@@ -503,6 +517,10 @@
             this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -524,9 +542,9 @@
             this.Communicate_tabPage.PerformLayout();
             this.skinToolStrip1.ResumeLayout(false);
             this.skinToolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.skinPanel1.ResumeLayout(false);
             this.skinPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.headpicture)).EndInit();
             this.skinToolStrip2.ResumeLayout(false);
             this.skinToolStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -553,7 +571,7 @@
         private System.Windows.Forms.TabPage Vedio_tabPage;
         private System.Windows.Forms.TabPage Entertain_tabPage;
         private System.Windows.Forms.TabPage Class_tabPage;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox headpicture;
         private CCWin.SkinControl.SkinPanel skinPanel1;
         private CCWin.SkinControl.SkinLabel Name_skinLable;
         private System.Windows.Forms.Button button1;
@@ -571,6 +589,8 @@
         private System.Windows.Forms.ToolStripMenuItem 删除分组ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重命名ToolStripMenuItem;
         private CCWin.SkinControl.SkinLabel PersonalMessage;
+        private System.Windows.Forms.ToolStripMenuItem 刷新好友列表ToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
 
     }
 }
